@@ -116,6 +116,7 @@ width:360px;
 height:360px;
 background: plum;
 margin: 10px;
+
 box-sizing:border-box ;
 display: inline-block;
 }
