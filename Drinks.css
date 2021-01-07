@@ -10,7 +10,7 @@ html
 
 .header{
 
-    background-image: url("Foto/Food/foto2/picture.jpg");
+    background-image: url("Foto/Drinks/picture.jpg");
  
     background-size:cover;
         padding: 60px;
@@ -23,7 +23,7 @@ body
 {
 
 
-    background-image:url("Foto/Food/foto2/back.jpg");
+    background-image:url("Foto/Drinks/back.jpg");
 
 
 }
@@ -176,131 +176,4 @@ color:white;
 {
     margin:10px 0 0;
     padding: 0;
-}
-
-{
-display: inline-flex;
-list-style:none ;
-color: #fff;
-}
-.icon-bar ul li 
-{
-    width: 180px;
-    margin: 10px;
-    padding: 10px;
-
-}
-.icon-bar ul li a{
-    text-decoration:none ;
-    color: rgb(255, 255, 255);
-}
-.active,.icon-bar ul li :hover
-{
-background-color: rgb(120, 101, 138);
-border-radius: 3px;
-}
-.icon-bar .a
-{
-margin-right: 10px;
-}
-
-.menu
-{
-    display: block;
-    position: relative;
-}
-
-.menu .sidebar 
-{
-    position:absolute;
-    width:200px;
-    padding: 30px;
-    
-}
-.menu .sidebar h2 
-{
-    color:white;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom:30px ;
-}
-.menu .sidebar ul{
-
-display: inline;
-width:100%;
-background-color: lightblue;
-
-
-}
-.menu .sidebar ul li{
-    padding: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(225, 225, 225, 0.5);
-
-}
-
-.container
-{
- width:1150px;
-  margin: 10px auto;
-  display:inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  float: right;
-  margin-right: 100px;
-  
-
-}
-.container .box
-{
-
-position: relative;
-width:360px;
-height:360px;
-background: plum;
-margin: 10px;
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box .details
-{
-
-position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
-background: rgba(0,0,0,.8) ;
-}
-.container .box .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box .details .content .h2
-{
-    
 }
