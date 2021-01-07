@@ -13,6 +13,7 @@ body {
 label {
     font-size: 35px;
     font-weight: bold;
+    color: rgb(53, 52, 52);
 
 }
 p{
@@ -321,11 +322,20 @@ button {
     text-align: center;
     margin: 5px;
     border-radius: 5px;
+    font-family: papyrus,"Lucida Handwriting" ,"Lucida Console";
 }
 
 button.Allrecipes 
 {
     display: block;
     margin:auto;
+    
+}
 
+button.YourRecipe
+{
+    padding: 10px 25px;
+    display: block;
+    margin: auto;
+    font-family: "Lucida Handwriting", "Lucida Console", papyrus;
 }
