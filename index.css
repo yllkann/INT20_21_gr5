@@ -4,7 +4,7 @@ body, html {
 
 .image {
   
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Foto/1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("FOTO/Main/1.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,4 +19,50 @@ body, html {
   bottom: 150px;
   left: 100px;
   color: white;
+}
+
+.sidenav {
+  text-align: center;
+  
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+.sidenav a {
+  padding: 50px 50px 50px 32px;
+  bottom: 150px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0s;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
