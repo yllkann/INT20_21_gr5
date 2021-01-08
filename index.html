@@ -3,8 +3,11 @@
     <head>
         <title>Food to your Heart</title>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     </head>
     <body>
+      <!--Interduction page-->
         <div class="image">
             <div class="text">
               <h1>FOOD TO YOUR HEART</h1>
@@ -12,13 +15,13 @@
               <span onclick="openNav()">open</span>
             </div>
           </div>
-        
+      <!--Side nav bar-->  
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="Food.html">Food</a>
+            <a href="Dessert.html">Dessert</a>
+            <a href="Drinks.html">Drinks</a>
+            <a href="LogIn.html">LogIn/SignUp</a>
           </div>
    
           <script>
@@ -30,6 +33,121 @@
               document.getElementById("mySidenav").style.width = "0";
             }
           </script>
+
+        
+      <!--Footer-->
+      <footer class="footer">
+        <div id="block_container">
+          <div id="div1" >
+            <ul class="nav">
+              <li>Contact us:</li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-youtube"></a></li>  
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-pinterest"></a></li> 
+            </ul>
+          </div>
+
+          <!--Pjesa e mondal-->
+          <div  class="div2">
+
+            <style>
+            .modal {
+              display: none; 
+              position: fixed; 
+              z-index: 1; 
+              padding-top: 250px; 
+              left: 0;
+              top: 0;
+              width: 100%; 
+              height: 100%; 
+              overflow: auto; 
+              background-color: rgb(117, 61, 61); 
+              background-color: rgba(0, 0, 0, 0); 
+            }
+            .modal-content {
+              background-color: #a18c8cd2;
+              margin: auto;
+              padding: 100px;
+              border: 1px solid #a18c8c9f;
+              width: 100%;
+            }
+
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            #myBtn {
+              padding: 10px 40px;
+              border-radius: 12px;
+            }
+
+            #myBtn {
+               transition-duration: 0.4s;
+               background-color: rgba(36, 34, 63, 0.863); 
+                color:  rgb(183, 204, 223); 
+                border: 2px solid black;
+            }
+
+            #myBtn:hover {
+              background-color: #000a00; /* Green */
+              color: white;
+            }
+
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+
+            </style>
+          
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Email us </button>
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>We as "Food to your Heart" would love to ... so feel free to give us some of you recepiese</p>
+                <p><a href="mailto:someone@example.com">Your recepiese</a></p>
+              </div>
+            
+            </div>
+            
+            <script>
+            var modal = document.getElementById("myModal");           
+            var btn = document.getElementById("myBtn");         
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+          </div>
+        </div>
+      </footer>
+
 
     </body>
 </html>

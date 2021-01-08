@@ -1,7 +1,9 @@
+
+
 body, html {
     height: 100%;
 }
-
+/*pjesa e header*/
 .image {
   
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("FOTO/Main/1.jpg");
@@ -30,7 +32,7 @@ body, html {
   z-index: 1; 
   top: 0; 
   left: 0;
-  background-color: #111; /* Black*/
+  background-color:  rgb(0, 0, 0); 
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
@@ -65,4 +67,89 @@ body, html {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+
+
+/*Pjesa e body*/
+
+
+
+
+
+
+
+
+/*Pjesa e footer*/
+
+.footer {
+  color: rgb(183, 204, 223);
+  background-color: rgba(36, 34, 63, 0.863);
+  padding-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.nav {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 25%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+#block_container {
+  text-align: center;
+}
+#block_container > div {
+  display: inline-block;
+  vertical-align: middle;
 }
