@@ -1,4 +1,7 @@
 
+html {
+  background-color: #b1ada3;
+}
 
 body, html {
     height: 100%;
@@ -12,6 +15,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 5px;
 }
 
 
@@ -96,7 +100,9 @@ aside {
     margin-bottom: 15px;
     float: left;
     font-style: italic;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.26);
+  border-radius: 5px;
+
 
 }
 
@@ -105,8 +111,12 @@ aside {
   -ms-flex: 70%; /* IE10 */
   width: 65%;
   float:right;
-  background-color: white;
+  margin-top: 15px;
+    margin-bottom: 15px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.411);
   padding: 20px;
+  border-radius: 5px;
 }
 
 /* Fake image, just for this example */
@@ -118,14 +128,13 @@ aside {
 
 
 
-
-
 /*Pjesa e footer*/
 
 .footer {
   color: rgb(183, 204, 223);
   background-color: rgba(36, 34, 63, 0.863);
   padding-top: 20px;
+  border-radius: 0%;
 }
 
 .fa {
@@ -154,7 +163,7 @@ aside {
 .fa-twitter {
   background: #55ACEE;
   color: white;
-  position: center;
+  
 }
 
 .fa-facebook {
