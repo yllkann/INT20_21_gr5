@@ -1,0 +1,196 @@
+
+html {
+  background-color: #b1ada3;
+}
+
+body, html {
+    height: 100%;
+}
+/*pjesa e header*/
+.image {
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("FOTO/Main/1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+
+
+.text {
+  text-align: center;
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  color: white;
+}
+
+.sidenav {
+  text-align: center;
+  
+  height: 100%; 
+  width: 0; 
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:  rgb(0, 0, 0); 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+
+.sidenav a {
+  padding: 50px 50px 50px 32px;
+  bottom: 150px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0s;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*Pjesa e body*/
+
+#row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+#row > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+aside {
+   /* IE10 */
+  
+    width: 30%;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+    font-style: italic;
+    background-color: rgba(211, 211, 211, 0.26);
+  border-radius: 5px;
+
+
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  width: 65%;
+  float:right;
+  margin-top: 15px;
+    margin-bottom: 15px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.411);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 90%;
+  padding: 20px;
+}
+
+
+
+/*Pjesa e footer*/
+
+.footer {
+  color: rgb(183, 204, 223);
+  background-color: rgba(36, 34, 63, 0.863);
+  padding-top: 20px;
+  border-radius: 0%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration:none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.nav {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+#block_container {
+  text-align: center;
+}
+#block_container > div {
+  display: inline-block;
+  vertical-align: middle;
+}
