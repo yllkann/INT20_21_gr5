@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="urf-8"/>
+    <title> Foodtoyourheart.com: SignUp </title>
+    <link rel="stylesheet" href="loginstyle.css"/>
+    <style>
+        article
+        {
+            width: 100%;
+            padding: 10px;  
+        }
+    </style>
+    
+    <script>
+	
+	function validateSignUp()
+	{  
+		var name=document.forms["signupform"]["fname"].value;  
+		var password=document.forms["signupform"]["fpassword"].value; 
+		var regex = /^[a-zA-Z]+$/i; 
+		  
+		if (name==null || name=="" || regex.test(name) == false)
+		{  
+		  alert("Name must be filled out / Name must be in alphabets only");  
+		  return false;  
+		}
+		else if(password.length<6)
+		{  
+		  alert("Password must be at least 6 characters long.");  
+		  return false;  
+	    }  
+	}  
+
+	function matchpass()
+	{  
+		var firstpassword=document.forms["signupform"]["fpassword"].value;  
+		var secondpassword=document.forms["signupform"]["fpassword2"].value;  
+		  
+		if(firstpassword==secondpassword){  
+		return true;  
+		}  
+		else{  
+		alert("Passwords must be the same!");  
+		return false;  
+		}  
+	}  
+
+    function shtypFunk()
+    {
+        $(document).ready(function()
+        {
+            $("#outputSign").empty();
+            $("#outputSign").append(" " + ffsurname.value);
+            $("#outputSign").prepend(ffname.value);
+            $("#outputSign").append(", " + $("#ffdate").val());
+            $("#outputSign").append(", " + ffemail.value);
+            $("#outputSign").append(", " + ffcountry.value);
+        });
+    }
+	</script>
+    
+    <script src="extra/jquery-3.2.1.js"> </script>
+    <script src="extra/scrollNav.js"> </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav style="background-image: url('Foto/Food/background.jpg');">
+                
+            <div style="float: left; margin-left: 80px; margin-top: 5px;padding-top: 4px;">  
+                <a href="MainPage.html"><img src="Foto/companylogo.png" width="300" height="50" alt="Company Logo"/></a>
+            </div>
+                        
+            <div style="float:right; margin-right: 40px;padding-top: 5px;">
+                <ul>
+                    <li> <a href="Food.html"> Food </a></li>
+                    <li> <a href="Desert.html"> Desert </a></li>
+                    <li> <a href="Drinks.html"> Drinks </a></li>
+                    <li> <a href="Login.html"> LogIn </a></li>
+                    <li> <a href="signup.html"> SignUp </a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr/>
+
+
+    </header>
+
+    <main style="margin-top: 7%;">
+        <article>
+
+            <div class="forma" style="width: 60%;padding: 20px;margin:auto;"> 
+                <form method="post" action="" id="signupform" onSubmit="return validateSignUp();">
+                    <fieldset>
+                        <legend> Sign up </legend>
+                        <p>
+                            <label> First name: </label>
+                            <input id="ffname" type="text" name="firstname" placeholder="Enter your first name..."/>
+                        </p>
+                        <p>
+                            <label> Surname: </label>
+                            <input id="ffsurname" type="text" name="surname" placeholder="Enter your surname..."/>
+                        </p>
+                        <p>
+                            <label> Date of birth: </label>
+                            <input id="ffdate" type="date" name="birthdate" required/>
+                        </p>
+                        <p>
+                            <label> Gender: </label>
+                            <input type="radio" name="gender" value="male"/> Male
+                            <input type="radio" name="gender" value="female"/> Female
+                        </p>
+                        <p>
+                            <label> Country: </label>
+                            <input type="text" id="ffcountry" name="country" list="countries" placeholder="Your country..." pattern="[A-Za-z]{3}" required/>
+                            <datalist id="countries" > 
+                                <option value="USA"> United States </option> <option value="GRB"> United Kingdom </option> <option value="FRA"> France </option> <option value="SPA"> Spain </option>
+                                <option value="KOS"> Kosovo </option><option value="ALB"> Albania </option><option value="GER"> Germany </option><option value="JAP"> Japan </option>
+                                <option value="ITA"> Italy </option><option value="POR"> Portugal </option><option value="AUS"> Australia </option><option value="BRA"> Brazil </option> 
+                                <option> Other </option>
+                            </datalist>
+                        </p>
+                        <p>
+                            <label> Email address: </label>
+                            <input id="ffemail" onblur="shtypFunk()" type="email" name="email" size="30" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+                        </p>
+                        <hr />
+                        <p>
+                            <label> Username: </label>
+                            <input type="text" name="user" placeholder="Enter username" required/>
+                        </p>
+                        <p>
+                            <label> Password: </label>
+                            <input id="fpassword" type="password" placeholder="password" required/>
+                        </p>
+                        <p>
+                            <label> Confirm password: </label>
+                            <input id="fpassword2" type="password" placeholder="Confirm password" onChange="return matchpass();"/>
+                        </p>
+                        <p>
+                            <label> Data: </label>
+                            <span id="outputSign" style="color: rgb(109, 109, 109);font-style:italic;"> </span>
+                        </p>
+                        <p align="center">
+                            <input type="submit" value="Sign up" />
+                            <input type="reset" />
+                        </p>
+
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div>
+            <div id="footer" >     
+                <div id="social">
+                    <h2>Follow Us</h2>            
+                        <a href="https://www.facebook.com" target="_blank"><img src="footer/images/rrjetetsociale/modern_01.png" width="48" height="46" alt="Facebook logo"/></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="footer/images/rrjetetsociale/modern_02.png" width="47" height="46" alt="Twitter logo"/></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="footer/images/rrjetetsociale/modern_04.png" width="48" height="46" alt="Instagram logo"/></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="footer/images/rrjetetsociale/modern_07.png" width="49" height="46" alt="LinkedIn logo"/></a>            
+                </div>
+                <div id="contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: contact@sparta.com</p>
+                    <p>Phone number: +377 44 007 007</p>
+                    <p>Address: St. Eçrem Çabej, Fakulteti Teknik</p>
+                    <p>Prishtina, Kosovo</p>
+                </div>
+            </div>
+                
+            <div id="copyright" style="margin-top: 50px;">
+                <p>© 2021 Foodtoyourheart - Designed by Us</p>            
+            </div>
+        </div>     
+    
+    </footer>
+
+
+</body>
+
+</html>
