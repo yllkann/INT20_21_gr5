@@ -76,7 +76,7 @@ margin-right: 10px;
 }
 .menu .sidebar h2 
 {
-    color:white;
+    color:rgb(120, 101, 138);
     text-transform: uppercase;
     text-align: center;
     margin-bottom:30px ;
@@ -85,12 +85,13 @@ margin-right: 10px;
 
 display: inline;
 width:100%;
-background-color: lightblue;
+background-color: rgb(120, 101, 138);
 
 
 }
 .menu .sidebar ul li{
     padding: 15px;
+    color: rgb(120, 101, 138);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(225, 225, 225, 0.5);
 
@@ -181,6 +182,6 @@ color:white;
 
 #cold
 {
-    text-align: end;
-color:#fff;
+    text-align: ;
+color:rgb(120, 101, 138);
 }
