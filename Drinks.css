@@ -109,7 +109,7 @@ background-color: rgb(120, 101, 138);
   
 
 }
-.container .box
+.container .box1
 {
 
 position: relative;
@@ -121,24 +121,24 @@ margin: 10px;
 box-sizing:border-box ;
 display: inline-block;
 }
-.container .box .imagebox
+.container .box1 .imagebox
 {
     position: relative;
     overflow: hidden;
 }
-.container .box .imagebox img
+.container .box1 .imagebox img
 {
  max-width: 100%;   
 transition: transform 2s;
 }
 
-.container .box:hover .imagebox img
+.container .box1:hover .imagebox img
 {
 
 transform: scale(1.2);
 }
 
-.container .box .details
+.container .box1 .details
 {
 
 position: absolute;
@@ -151,12 +151,12 @@ transform: scaleY(0);
 transition:transform .5s ;
 
 }
-.container .box:hover .details
+.container .box1:hover .details
 {
     transform: scaleY(1);
 
 }
-.container .box .details .content
+.container .box1 .details .content
 {
 
 position: absolute;
@@ -167,18 +167,325 @@ padding: 15px;
 color:white;
 }
 
-.container .box .details .content .h2
+.container .box1 .details .content .h2
 {
     margin:0;
     padding: 0;
     font-size: 20px;
 color:white;
 }
-.container .box .details .content .p
+.container .box1 .details .content .p
 {
     margin:10px 0 0;
     padding: 0;
 }
+
+
+
+
+
+
+
+.container .box2
+{
+
+position: relative;
+width:360px;
+height:360px;
+background: plum;
+margin: 10px;
+
+box-sizing:border-box ;
+display: inline-block;
+}
+.container .box2 .imagebox
+{
+    position: relative;
+    overflow: hidden;
+}
+.container .box2 .imagebox img
+{
+ max-width: 100%;   
+transition: transform 2s;
+}
+
+.container .box2:hover .imagebox img
+{
+
+transform: scale(1.2);
+}
+
+.container .box2 .details
+{
+
+position: absolute;
+top:10px;
+left: 10px;
+bottom:10px;
+right:10px;
+background: rgba(0,0,0,.8) ;
+transform: scaleY(0);
+transition:transform .5s ;
+
+}
+.container .box2:hover .details
+{
+    transform: scaleY(1);
+
+}
+.container .box2 .details .content
+{
+
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color:white;
+}
+
+.container .box2 .details .content .h2
+{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+color:white;
+}
+.container .box2 .details .content .p
+{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+.container .box3
+{
+
+position: relative;
+width:360px;
+height:360px;
+background: plum;
+margin: 10px;
+
+box-sizing:border-box ;
+display: inline-block;
+}
+.container .box3 .imagebox
+{
+    position: relative;
+    overflow: hidden;
+}
+.container .box3 .imagebox img
+{
+ max-width: 100%;   
+transition: transform 2s;
+}
+
+.container .box3:hover .imagebox img
+{
+
+transform: scale(1.2);
+}
+
+.container .box3 .details
+{
+
+position: absolute;
+top:10px;
+left: 10px;
+bottom:10px;
+right:10px;
+background: rgba(0,0,0,.8) ;
+transform: scaleY(0);
+transition:transform .5s ;
+
+}
+.container .box3:hover .details
+{
+    transform: scaleY(1);
+
+}
+.container .box3 .details .content
+{
+
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color:white;
+}
+
+.container .box3 .details .content .h2
+{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+color:white;
+}
+.container .box3 .details .content .p
+{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+
+
+
+.container .box4
+{
+
+position: relative;
+width:360px;
+height:360px;
+background: plum;
+margin: 10px;
+
+box-sizing:border-box ;
+display: inline-block;
+}
+.container .box4 .imagebox
+{
+    position: relative;
+    overflow: hidden;
+}
+.container .box4 .imagebox img
+{
+ max-width: 100%;   
+transition: transform 2s;
+}
+
+.container .box4:hover .imagebox img
+{
+
+transform: scale(1.2);
+}
+
+.container .box4 .details
+{
+
+position: absolute;
+top:10px;
+left: 10px;
+bottom:10px;
+right:10px;
+background: rgba(0,0,0,.8) ;
+transform: scaleY(0);
+transition:transform .5s ;
+
+}
+.container .box4:hover .details
+{
+    transform: scaleY(1);
+
+}
+.container .box4 .details .content
+{
+
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color:white;
+}
+
+.container .box4 .details .content .h2
+{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+color:white;
+}
+.container .box4 .details .content .p
+{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+
+
+
+
+.container .box5
+{
+
+position: relative;
+width:360px;
+height:360px;
+background: plum;
+margin: 10px;
+
+box-sizing:border-box ;
+display: inline-block;
+}
+.container .box5 .imagebox
+{
+    position: relative;
+    overflow: hidden;
+}
+.container .box5 .imagebox img
+{
+ max-width: 100%;   
+transition: transform 2s;
+}
+
+.container .box1:hover .imagebox img
+{
+
+transform: scale(1.2);
+}
+
+.container .box5 .details
+{
+
+position: absolute;
+top:10px;
+left: 10px;
+bottom:10px;
+right:10px;
+background: rgba(0,0,0,.8) ;
+transform: scaleY(0);
+transition:transform .5s ;
+
+}
+.container .box5:hover .details
+{
+    transform: scaleY(1);
+
+}
+.container .box5 .details .content
+{
+
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+text-align: center;
+padding: 15px;
+color:white;
+}
+
+.container .box5 .details .content .h2
+{
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+color:white;
+}
+.container .box5 .details .content .p
+{
+    margin:10px 0 0;
+    padding: 0;
+}
+
+
+
+
 
 #cold
 {
