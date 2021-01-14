@@ -30,7 +30,7 @@
         
 .btopnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(61, 60, 60);
 }
 
 .btopnav a {
@@ -42,16 +42,12 @@
   text-decoration: none;
   font-size: 17px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 
 
 
 .bactive {
-  background-color: #4b3e22;
+  background-color: #1f1f1f;
   color: white;
 }
 
@@ -80,7 +76,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgb(158, 32, 32);
   z-index: 1;
 }
 
