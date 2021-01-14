@@ -16,7 +16,6 @@ html
     color: white;
     font-size: 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Foto/Drinks/110.jpg");
-
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,23 +32,23 @@ body
 
 .container
 {
- width:1150px;
+ width:1550px;
   margin: 10px auto;
   display:inline-block;
   flex-direction: row;
   flex-wrap: wrap;
- 
   margin-right: 100px;
+ 
 }
 
 .container .box1
 {
 
 position: relative;
-width:360px;
-height:360px;
+width:340px;
+height:340px;
 background: plum;
-margin: 10px;
+margin: 20px;
 
 box-sizing:border-box ;
 display: inline-block;
@@ -75,10 +74,10 @@ transform: scale(1.2);
 {
 
 position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
+top:20px;
+left: 20px;
+bottom:20px;
+right:20px;
 background: rgba(0,0,0,.8) ;
 transform: scaleY(0);
 transition:transform .5s ;
@@ -123,10 +122,10 @@ color:white;
 {
 
 position: relative;
-width:360px;
-height:360px;
+width:340px;
+height:340px;
 background: plum;
-margin: 10px;
+margin: 20px;
 
 box-sizing:border-box ;
 display: inline-block;
@@ -200,10 +199,10 @@ color:white;
 {
 
 position: relative;
-width:360px;
-height:360px;
+width:340px;
+height:340px;
 background: plum;
-margin: 10px;
+margin: 20px;
 
 box-sizing:border-box ;
 display: inline-block;
@@ -274,10 +273,10 @@ color:white;
 {
 
 position: relative;
-width:360px;
-height:360px;
+width:340px;
+height:340px;
 background: plum;
-margin: 10px;
+margin: 20px;
 
 box-sizing:border-box ;
 display: inline-block;
@@ -349,10 +348,10 @@ color:white;
 {
 
 position: relative;
-width:360px;
-height:360px;
+width:340px;
+height:340px;
 background: plum;
-margin: 10px;
+margin: 20px;
 
 box-sizing:border-box ;
 display: inline-block;
@@ -428,10 +427,6 @@ color:rgb(120, 101, 138);
 
 
 
-
-
-
-
 /* Nav bar */
         
 .btopnav {
@@ -447,14 +442,10 @@ color:rgb(120, 101, 138);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+
   }
   
-  
+..
   
   .bactive {
     background-color: #4b3e22;
