@@ -41,32 +41,7 @@ p{
        
     }
 
-header nav  {
-        display: block;   
-        width: 100%;
-        margin: 0; 
-        color:white;
-        background-color:gray;
-        padding:5px;
-        text-align: center;
-     
-}
-header nav ul li {
-    display: inline;
-    list-style: none;
-    padding:30px;
-    margin:0;
-}
 
-header nav ul li a {
-
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding: 40px;
-    color: rgb(143, 32, 32);
-    margin:0;
-}
 
 
 /*##### MAIN #####*/
