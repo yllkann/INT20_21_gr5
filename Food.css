@@ -68,162 +68,10 @@ header nav ul li a {
     margin:0;
 }
 
-/*
-header nav ul li a:hover{
-    background-color: white;
-    color:black;
-    margin:0;
-}
 
+/*##### MAIN #####*/
 
-i{
-    margin-right:10px;
-}
-
-
-.menu1
-{
-
-display: none;
-}
-
-nav ul li:hover .menu1
-{
-display: inline;
-position: absolute;
-background:rgb(177, 176, 177);
-margin-top: 15px;
-margin-left: 0px;
-}
-
-nav ul li:hover .menu1 ul
-{
-  
-    margin:0;
-
-}
-
-nav ul li:hover .menu1 ul li 
-{
-    display: list-item;
-    width:200px;
-    padding: 20px;
-    border-bottom: 1px dotted white;
-    background: transparent;
-    border-radius: 0;
-    text-align: center;
-    margin:0;
-}
-
-nav ul li:hover .menu1 ul li :last-child
-{
-
-border-bottom:none ;
-
-}
-
-nav ul li:hover .menu1 ul li a:hover 
-{
-    color:black;
-}
-
- 
-.menu2 {
-    display: none;
-}
-
-nav ul li:hover .menu2
-{
-display: inline;
-position: absolute;
-background:rgb(177, 176, 177) ;
-margin-top: 15px;
-margin-left: 15px;
-}
-
-nav ul li:hover .menu2 ul
-{
-    
-    margin:10px;
-
-}
-nav ul li:hover .menu2 ul li 
-{
-    display: list-item;
-    width:150px;
-    padding: 15px;
-    border-bottom: 1px dotted white;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-nav ul li:hover .menu2 ul li :last-child
-{
-
-border-bottom:none ;
-
-}
-nav ul li:hover .menu2 ul li a:hover 
-{
-    color:black;
-}
-
-.menu3{
-    display: none;
-}
-
-nav ul li:hover .menu3
-{
-display: block;
-position: absolute;
-background:rgb(177, 176, 177) ;
-margin-top: 15px;
-margin-left: 15px;
-}
-
-nav ul li:hover .menu3 ul
-{
-    display: block;
-    margin:10px;
-
-}
-nav ul li:hover .menu3 ul li 
-{
-    display: list-item;
-    width:150px;
-    padding: 15px;
-    border-bottom: 1px dotted white;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-nav ul li:hover .menu3 ul li :last-child
-{
-
-border-bottom:none ;
-
-}
-nav ul li:hover .menu3 ul li a:hover 
-{
-    color:black;
-}
-
-*/
-/*########## MAIN ###############*/
-/*
-.container{
-    width: 100%;
-    margin:auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
- 
-
-#section1 {
-
-    background: -webkit-linear-gradient(rgb(206, 146, 146), rgb(216, 216, 216))
-}
-.row{
+ .row{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -248,55 +96,18 @@ nav ul li:hover .menu3 ul li a:hover
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-h5.Lista{
-    color: rgb(143, 32, 32);
-    font-size: 50px;
-    margin:0;
-    line-height:  120px;
-    padding-left: 20px;
-}
 
-h5.Meat {
-    color: rgb(143, 32, 32);
-    font-size: 25px;
-}
-*/
-/*##### MAIN2 #####*/
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.row::after{
-    display: table  ;
-    clear: both;
-    content: "";
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-* {
-    box-sizing: border-box;
-}
 
 h1.Typesofrecipes{
 text-align: center;
 font-family: 'Courier New', Courier, monospace;
 color: rgb(143, 32, 32);
 font-size: 50px;
+
+* {
+    box-sizing: border-box;
+  }
+
 
 }
 div.box {
@@ -306,8 +117,18 @@ div.box {
     border-radius: 7px;
     background-color: transparent;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+
 }
 
+.box {
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 7px;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+    
+} 
 div.icon {
     width: 100%;
 }
