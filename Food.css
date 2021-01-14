@@ -104,6 +104,10 @@ font-family: 'Courier New', Courier, monospace;
 color: rgb(143, 32, 32);
 font-size: 50px;
 
+* {
+    box-sizing: border-box;
+  }
+
 
 }
 div.box {
@@ -124,33 +128,7 @@ div.box {
     background-color: transparent;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
     
-} */
-
-.boxxx {
-    text-align: center;
-    margin: 0px;
-    padding: 12px;
-    border-radius: 7px;
-    background-color: transparent;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
-    width: 30%;
-    float: left;
-   
-}
-
-.boxxx a { 
-    display: inline-block;
-}
-
-.boxxx pre {
-
-    height: 90px;
-    overflow: hidden;
-}
-
-.boxxx.showContent pre{
-    height: auto;
-}
+} 
 div.icon {
     width: 100%;
 }
