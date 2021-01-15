@@ -120,10 +120,11 @@ p .ImageSpin{
        transform: rotateX(30deg)
    
        }
-   to: {
-       transform: rotateX(360deg);
+   to {
+         transform: rotateX(360deg);
        }
-   }
+      }
+
 
 rotate3D:hover {
     transform: rotate3d(1,1,1,35deg);
