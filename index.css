@@ -166,14 +166,34 @@ vertical-align: middle;
 }
 
 .foodtheme{
-  background-color: #FFE5B2;
-  width: 100%;
-  height: 100%;
+  background-color: #ffe5b293;
+  margin-left: 10px;
+  margin-right: 20px;
+  border: 2px solid orange;
   
   
 }
 .desserttheme{
-  background-color: #FFE7CB;
+  background-color: #ffe7cbd2;
+  margin-left: 10px;
+  margin-right: 20px;
+  border:2px solid pink ;
+}
+.drinkstheme{
+  background-color: #f0d1f2cb;
+  margin-left: 10px;
+  margin-right: 20px;
+  border: 2px solid violet;
+}
+.boxi1{
+  background-color: #cb8a8238;
+  margin-left: 10px;
+  margin-right: 20px;
+  border: 2px solid salmon;
+  
+}
+.teksti{
+  margin-left: 20px;
 }
 
 .wrapper {
