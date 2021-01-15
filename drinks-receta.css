@@ -1,8 +1,4 @@
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
+
 html
 {
     overflow: scroll;
@@ -144,6 +140,39 @@ body
     /* background-color: rgb(110, 109, 109); */
     font-family: monospace,serif;
     margin: 35px;
+}
+
+
+#ingredients {
+  font-size: 30px;
+  font-family: monospace,serif;
+  /* background-color: rgb(110, 109, 109); */
+  color: rgba(51, 5, 73, 0.603);
+  text-align: left;
+}
+
+
+dl {
+  /* background-color: rgb(110, 109, 109); */
+}
+dl dt {
+  font-size: 30px;
+  font-family: monospace, serif;
+  color:  rgba(51, 5, 73, 0.603);
+  text-align: left;
+}
+
+dl dd ul {
+  list-style-type:circle;
+  font-family: monospace,serif;
+  
+  
+}
+
+dl dd ol {
+  list-style-type:lower-roman;
+  font-family: monospace, serif;
+  
 }
 
 
