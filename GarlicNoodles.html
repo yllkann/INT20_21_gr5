@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="FoodRecipes.css">
   
+    <script>
+      window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2D");
+        var img = document.getElementById("foto");
+        ctx.drawImage(img, 5, 5);
+      };
+    </script>
+
     <title>Food To Your Heart</title>
 
     <style>
-        dl {
-    /* background-color: rgb(110, 109, 109); */
-}
+    
 dl dt {
     font-size: 30px;
     font-family: monospace, serif;
@@ -75,8 +82,13 @@ form{
         <hr>
         <br>
         <h1 id="Recipe" style="text-align: center;font-family: papyrus, arial, sans-serif;font-size:400%; color: rgb(243, 94, 8)">P.F. Chang’s Garlic Noodles</h1>
-        <p style="text-align:center;" id="rotate3D"><img src="/Foto/Food/GarlicNoodles.png" alt="P.F. Chang’s Garlic Noodles" class="ImageSpin"></p> 
+        <p style="text-align:center;" id="rotate3D"><img src="/Foto/Food/GarlicNoodles.png" alt="P.F. Chang’s Garlic Noodles" class="ImageSpin" id="foto"></p> 
         
+        <br>
+        <canvas id="myCanvas" width="190" height="280" style="border:1px solid #d3d3d3;margin-left: 35em;">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
         <br>
         
         
