@@ -435,8 +435,8 @@ color:rgb(120, 101, 138);
   }
   
   .btopnav a {
-    float: left;
-    display: block;
+    float:left;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -447,20 +447,24 @@ color:rgb(120, 101, 138);
   
   
   .bactive {
+      
     background-color: rgb(224, 101, 224);
     color: white;
   }
   
   .btopnav .bicon {
+      
     display: none;
   }
   
   .bdropdown {
+      
     float: left;
     overflow: hidden;
   }
   
   .bdropdown .bdropbtn {
+      
     font-size: 17px;    
     border: none;
     outline: none;
@@ -546,7 +550,7 @@ color:rgb(120, 101, 138);
   }
   
   .fa {
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     width: 30px;
     text-align: center;
