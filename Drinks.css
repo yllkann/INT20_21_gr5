@@ -431,7 +431,7 @@ color:rgb(120, 101, 138);
         
 .btopnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(224, 101, 224);
   }
   
   .btopnav a {
@@ -445,10 +445,9 @@ color:rgb(120, 101, 138);
 
   }
   
-..
   
   .bactive {
-    background-color: #4b3e22;
+    background-color: rgb(224, 101, 224);
     color: white;
   }
   
@@ -477,7 +476,7 @@ color:rgb(120, 101, 138);
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px purple;
     z-index: 1;
   }
   
@@ -491,7 +490,7 @@ color:rgb(120, 101, 138);
   }
   
   .btopnav a:hover, .bdropdown:hover .bdropbtn {
-    background-color: #555;
+    background-color: rgb(201, 27, 207);
     color: white;
   }
   
