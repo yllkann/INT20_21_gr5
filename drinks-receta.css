@@ -150,6 +150,8 @@ body
 
 }
 
+
+
 .item 
 {
 display: flex;
@@ -166,9 +168,9 @@ border-bottom: 1px solid #d8dff1;
 
 input:checked + label
 {
-background: darkblue;
+background: rgb(250, 3, 209);
 text-decoration: line-through;
-color: darkcyan;
+color: rgb(242, 122, 253);
 transition: 0.1s ease-out;
 }
   
