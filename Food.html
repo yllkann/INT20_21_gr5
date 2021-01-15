@@ -37,16 +37,7 @@
           <a href="#login-id01"> <i class="fa fa-sign-in icons" ></i> Log In</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
         </div>
-        <script>
-        function myFunction() {
-          var x = document.getElementById("bmyTopnav");
-          if (x.className === "btopnav") {
-            x.className += " bresponsive";
-          } else {
-            x.className = "btopnav";
-          }
-        }
-        </script>
+       
         
         <br>
         <br>
@@ -170,7 +161,9 @@
                     <p>Cheesy Florentine Pasta with an easy creamy Parmesan
                          sauce, fresh spinach and roasted bell peppers. The
                           perfect weeknight meal that's also great as a cold
-                           lunch option!</p>
+                           lunch option!
+                           <a href="FlorentinePasta.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
+                        </p>
                     
                 </div>
             </div>
@@ -304,17 +297,7 @@
           </form>
         </div>
         
-        <script>
-        // Get the modal
-        var modal = document.getElementById('login-id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
+       
     </div>
     <div>
         
@@ -350,29 +333,7 @@
           </form>
         </div>
         
-        <script>
-        // Get the modal
-        var modal = document.getElementById('signup-id01');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        window.onscroll = function() {myFunction()};
-
-      var header = document.getElementById("bmyTopnav");
-      var sticky = header.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-        </script>
+      
     </div>
   </div>
 
