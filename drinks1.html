@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Drinks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="drinks-receta.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+    
+        <body>
+            
+        <div class="headeer">
+          <h1>DRINKS</h1>
+          <p>Food To Your Heart</p>
+        </div>
+
+  </header>
+<main>
+
+
+
+  <div class="btopnav" id="bmyTopnav">
+    <a href="index.html " class="bactive">  <i class="fa fa-home" > </i>Home</a>
+    <a href="Food.html">  <i class="fa fa-cutlery" > </i> Food</a>
+    <a href="Dessert.html">  <i class="fa fa-birthday-cake" > </i>Dessert</a>
+    <div class="bdropdown">
+      <button class="bdropbtn">  <i class="fa fa-glass" > </i> Drinks
+        <i class="bfa bfa-caret-down"></i>
+      </button>
+      <div class="bdropdown-content">
+        <a href="#">Hot</a>
+        <a href="#">Cold</a>
+        <a href="#">Alcoholic</a>
+        <a href="#">Non-Alcoholic</a>
+      </div>
+    </div> 
+    
+    <a href="#login-id01"><i class="fa fa-sign-in" > </i>Log In   </a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("bmyTopnav");
+    if (x.className === "btopnav") {
+      x.className += " bresponsive";
+    } else {
+      x.className = "btopnav";
+    }
+  }
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("bmyTopnav");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+
+
+<br>
+<br>
+<br>
+  <h1 style="text-align: center ; color:white ; font-family:Papyrus,Arial, sans-serif; font-size: 400%;">Hot apple cinder </h1>
+  <br>
+  <br>
+  <br>
+
+  <div class="imagebox">
+    <p style="text-align:center;">   <img src="Foto/Drinks/img1.webp"></p>
+  </div>
+  
+<br>
+        
+        
+<p id="ingredients"><ins>Ingredients</ins></p>
+
+<form name="Ingredients" title="Ingredients"> 
+
+    <input type="checkbox" id="i1" name="i1" value="butter">
+    <label for="i1"> 2 teaspoons kosher salt</label><br>
+    <input type="checkbox" id="i2" name="i2" value="salt">
+    <label for="i2"> 1 cup unsalted butter softened</label><br>
+    <input type="checkbox" id="i3" name="i3" value="pepper">
+    <label for="i3"> 1 teaspoon coarse ground black pepper</label><br>
+    <input type="checkbox" id="i4" name="i4" value="turkey">
+    <label for="i4"> 1 turkey 16-18 pounds, patted dry</label><br>
+    <input type="checkbox" id="i4" name="i4" value="stock">
+    <label for="i4">8 cups chicken stock</label><br>
+    
+
+</form>
+<br>
+<dl><dt><ins>Instructions</ins></dt>
+  <dd>
+      <ol>
+          <li>Preheat the oven to <mark> 325 degrees</mark>  and remove all but the bottom rack and add the turkey to a large roasting pan with a rack.</li>
+          <li>Remove the bag of giblets and pat the turkey dry inside and out.</li>
+          <li>Mash the butter, salt and pepper in a small bowl and lift from under the turkey with the back of a spoon to separate the skin while adding in small chunks of the butter and then patting the skin back down to help spread the butter under the skin all over the bird (being careful not to pierce or tear the skin as the butter will ooze out.</li>
+          <li>Pour 2 cups of chicken stock in the pan and cover with foil and set a timer to go off every 30 minutes, basting each time.</li>
+          <li>After 2 hours remove the foil and continue cooking and basting for an additional 2 hours or until the thigh is cooked to 165 degrees (this is vital for food safety) and let rest for 20 minutes before serving.</li>
+      </ol>
+  </dd>
+</dl>
+<hr>
+
+</main>
+  <br>
+  <br>
+
+  <!--Footer-->
+          
+        
+  <footer class="footer">
+       
+      <div id="block_container">
+      <div id="div1" >
+        <ul class="nav">
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-youtube"></a></li>  
+          <li><a href="#" class="fa fa-instagram"></a></li>
+          <li><a href="#" class="fa fa-pinterest"></a></li> 
+        </ul>
+      </div>
+     
+    
+      <div>
+         
+          
+          <button onclick="document.getElementById('login-id01').style.display='block'" style="width:auto;">Login</button>
+          
+          <div id="login-id01" class="login-modal">
+            
+            <form class="login-modal-content animate" action="/action_page.php" method="post">
+              <div class="login-imgcontainer">
+                <span onclick="document.getElementById('login-id01').style.display='none'" class="login-close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="login-avatar">
+              </div>
+          
+              <div class="login-container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="login-container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login-id01').style.display='none'" class="login-cancelbtn">Cancel</button>
+                <span class="login-psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('login-id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+      </div>
+      <div>
+          
+          <button onclick="document.getElementById('signup-id01').style.display='block'" style="width:auto;">Sign Up</button>
+          
+          <div id="signup-id01" class="signup-modal">
+            <span onclick="document.getElementById('signup-id01').style.display='none'" class="signup-close" title="Close Modal">&times;</span>
+            <form class="signup-content" action="/action_page.php">
+              <div class="signup-container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+          
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('signup-id01').style.display='none'" class="signup-cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('signup-id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+      </div>
+    </div>
+    
+    <div>
+    <table>
+    <tr>
+    <th><a href="Food.html">FOOD</a></th>
+      <th><a href="Dessert.html">DESSERT</a></th>
+      <th><a href="Drinks.html">DRINKS</a></th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+    </table>
+    
+    </div>
+     
+    </footer>
+  
+  </body>
+  
+  </html>
+  

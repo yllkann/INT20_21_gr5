@@ -18,22 +18,23 @@
     </header>
 
     <main>
+        <div class="cont">
         <div class="btopnav" id="bmyTopnav">
-          <a href="index.html " class="bactive">Home</a>
+          <a href="index.html " class="bactive"> <i class="fa fa-home icons" > </i> Home</a>
           <div class="bdropdown">
-            <button class="bdropbtn">Food 
+            <button class="bdropbtn"><i class="fa fa-cutlery icons" > </i> Food </i>
               <i class="bfa bfa-caret-down"></i>
             </button>
             <div class="bdropdown-content">
-              <a href="#">Meat</a>
-              <a href="#">Vegetarian</a>
-              <a href="#">Vegan</a>
-              <a href="#">Your recipe</a>
+              <a href="#Meat">Meat</a>
+              <a href="#Vegetarian">Vegetarian</a>
+              <a href="#Vegan">Vegan</a>
+              
             </div>
           </div> 
-           <a href="Dessert.html">Desserts</a>
-          <a href="Drinks.html">Drinks</a>
-          <a href="#login-id01">Log In</a>
+           <a href="Dessert.html"> <i class="fa fa-birthday-cake icons" > </i> Desserts   </a>
+          <a href="Drinks.html"> <i class="fa fa-glass icons" > </i> Drinks</a>
+          <a href="#login-id01"> <i class="fa fa-sign-in icons" ></i> Log In</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
         </div>
         <script>
@@ -50,16 +51,17 @@
         <br>
         <br>
         <em>
-        <h2 style="text-align: center;">MEAT</h2>
+        <h2 id="Meat" style="text-align: center;">MEAT</h2>
         </em>
     <div class="wrapper">
         <div class="card">
-            <img src="/Foto/Food/BeefAndBroccoli.png" alt="">
+            <img src="/Foto/Food/BeefAndBroccoli.png" alt="BeefAndBroccoli">
             <div class="info">
                 <h5>Beef and Broccoli</h5>
                 <p>Beef and Broccoli is a healthy Chinese food option
                      with tender slices of meat and tender broccoli in
                       less than 30 minutes and just a few ingredients!...
+                      <a href="BeefandBroccoli.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
                     </p>
                         
                         
@@ -111,7 +113,7 @@
                 <br>
 <hr>
                 <em>
-                <h2 style="text-align: center;">VEGETARIAN</h2>
+                <h2 id="Vegetarian" style="text-align: center;">VEGETARIAN</h2>
                 </em>
                 <br>
                 <br>
@@ -169,7 +171,7 @@
         <br>
         <hr>
         <em>
-        <h2>VEGAN</h2>
+        <h2 id="Vegan" style="text-align: center;">VEGAN</h2>
         </em>
         <br>
         <br>
@@ -237,7 +239,7 @@
         <hr>
        
     
-
+    </div>
         
     </main>
 </body> 

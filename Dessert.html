@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="Dessert.css">
-  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Food To Your Heart</title>
 </head>
 <body>
     <header>
 
           <div class="headeer">
-            <h1>DESSERT</h1>
+            <h1>DESSERTS</h1>
             <p>Food To Your Heart</p>            
           </div>
 
@@ -20,22 +20,21 @@
     
     <main>
       <div class="btopnav" id="bmyTopnav">
-        <a href="index.html " class="bactive">Home</a>
-        <a href="Food.html">Food</a>
+        <a href="index.html " class="bactive"> <i class="fa fa-home icons"></i>  Home</a>
+        <a href="Food.html"><i class="fa fa-cutlery icons"> </i>  Food</a>
         <div class="bdropdown">
-          <button class="bdropbtn">Dessert
+          <button class="bdropbtn"> <i class="fa fa-birthday-cake icons"></i>  Dessert
             <i class="bfa bfa-caret-down"></i>
           </button>
           <div class="bdropdown-content">
-            <a href="#">Baking</a>
-            <a href="#">Non-Baking</a>
-            <a href="#">Frozen</a>
-            <a href="#">Pastries</a>
-          </div>
-        </div> 
-         
-        <a href="Drinks.html">Drinks</a>
-        <a href="#login-id01">Log In</a>
+            <a href="#Baking">Baking</a>
+            <a href="#Non-Baking">Non-Baking</a>
+            <a href="#Frozen">Frozen</a>
+             <a href="#Pastries">Pastries</a>
+        </div>
+      </div> 
+      <a href="Drinks.html"><i class="fa fa-glass icons"> </i>  Drinks</a>
+      <a href="#login-id01"> <i class="fa fa-birthday-cake icons"></i>  Log In</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
       </div>
       <script>
@@ -51,7 +50,7 @@
 
       var header = document.getElementById("bmyTopnav");
       var sticky = header.offsetTop;
-
+    
       function myFunction() {
         if (window.pageYOffset > sticky) {
           header.classList.add("sticky");
@@ -62,27 +61,27 @@
       </script>
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+        
         <em>
-        <h2 style="text-align: center;">BAKING</h2>
+        <h2 id=Baking style="text-align: center;">BAKING</h2>
         </em>
     <div class="wrapper">
         <div class="card">
             <img src="FOTO/Desserts/1b.jpg" alt="">
             <div class="info">
                 <h5>Apple Cake</h5>
-                <p>Beat 2 1/4 cup flour, milk, 1/4 cup sugar, yeast, 
+                <p>Step 1
+                    Beat 2 1/4 cup flour, milk, 1/4 cup sugar, yeast, 
                     6 tablespoons butter, vanilla extract, and
                      1 pinch salt in a large bowl with an electric mixer
                      on high until dough is smooth, about 5 minutes;
                      spread into baking dish and press dough up the sides.
-                     Press apple slices into dough.
-                    Mix 1 cup sugar, 3/4 cup flour, candied lemon peel, 
-                    cinnamon, nutmeg, and 1 pinch salt in a bowl.
-                     Cut in 1/2 cup butter with a knife or pastry blender until 
-                    mixture resembles coarse crumbs; sprinkle over apples.
-                     Allow dough to rise for 30 minutes.
-                    Bake in preheated oven until cake is golden brown 
-                    and apples are tender, about 35 minutes.
+                     Press apple slices into dough...
+                     <a href="dessert1.html" style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
+                   
                     </p>
                 
                 
@@ -140,7 +139,7 @@
                 <br>
 <hr>
                 <em>
-                <h2 style="text-align: center;">NON-BAKING</h2>
+                <h2 id=Non-Baking style="text-align: center;">NON-BAKING</h2>
                 </em>
                 <br>
                 <br>
@@ -204,7 +203,7 @@
         <br>
         <hr>
         <em>
-        <h2>FROZEN</h2>
+        <h2 id=Frozen style="text-align: center;">FROZEN</h2>
         </em>
         <br>
         <br>
@@ -281,7 +280,7 @@
         <br>
         <hr>
         <em>
-        <h2>PASTRIES</h2>
+        <h2 id=Pastries style="text-align: center;">PASTRIES</h2>       
         </em>
         <br>
         <br>
