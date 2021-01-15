@@ -1,17 +1,21 @@
-
-html {
-  background-color: #b1ada3;
+/*Pjesa perfshirese*/
+html{
+  background-color: rgba(66, 41, 41, 0.479);
 }
 
-body, html {
-    height: 100%;
-}
-/*pjesa e header*/
-.image {
+/*PJESA  E BODY*/
+/*Pjesa header*/
+header{
   
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("FOTO/Main/1.jpg");
+  height: 745px;
+}
+.image {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("FOTO/Main/1.jpg");
   height: 100%;
-  background-position: center;
+  width: 100%;
+ background-position: fixed;
+ background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -55,7 +59,7 @@ body, html {
 
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #465463;
 }
 
 
@@ -74,134 +78,428 @@ body, html {
 }
 
 
-
-/*Pjesa e body*/
+/*Pjesa main*/
 #row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
+display: -ms-flexbox; 
+display: flex;
+-ms-flex-wrap: wrap; 
+flex-wrap: wrap;
 }
 #row > div {
-  display: inline-block;
-  vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+/* Krijimi i dy kolonave qe rrine pran njeratjetres */
+/* Kolona ne te majt */
 aside {
-   /* IE10 */
-  
-    width: 30%;
-    padding-left: 10px;
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    float: left;
-    font-style: italic;
-    background-color: rgba(211, 211, 211, 0.26);
-  border-radius: 5px;
+ /* IE10 */
 
-
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  width: 65%;
-  float:right;
-  margin-top: 15px;
-    margin-bottom: 15px;
+  width: 30%;
+  padding-left: 10px;
   margin-left: 10px;
-  background-color: rgba(255, 255, 255, 0.411);
-  padding: 20px;
-  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+  font-style: italic;
+  background-color: rgba(211, 211, 211, 0.26);
+border-radius: 5px;
+
+
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 90%;
-  padding: 20px;
+/* Kolona main */
+.main {   
+-ms-flex: 70%; /* IE10 */
+width: 68.5%;
+float:right;
+margin-top: 15px;
+  margin-bottom: 15px;
+margin-left: 10px;
+background-color: rgba(255, 255, 255, 0.411);
+padding: 20px;
+border-radius: 5px;
+}
+
+
+.fakeimg3 {
+background-color: #aaa;
+background-image: url("FOTO/Main/OFBB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 90%;
+
+padding: 20px;
 }
 
 
 
+/*Pjesa footer*/
 
-
-
-/*Pjesa e footer*/
 
 .footer {
-  color: rgb(183, 204, 223);
-  background-color: rgba(36, 34, 63, 0.863);
-  padding-top: 20px;
-  border-radius: 0%;
+color: rgb(183, 204, 223);
+background-color: rgba(36, 34, 63, 0.863);
+padding-top: 20px;
+border-radius: 0%;
+
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration:none;
-  margin: 5px 2px;
-  border-radius: 50%;
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration:none;
+margin: 5px 2px;
+border-radius: 50%;
 }
 
 .nav {
-  
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 .nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+display: inline-block;
+font-size: 030px;
+padding: 20px;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
-  
+
+color: white;
+
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+color: white;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+color: white;
 }
 
 .fa-pinterest {
-  background: #cb2027;
-  color: white;
+color: white;
 }
 
 
 #block_container {
-  text-align: center;
+text-align: center;
 }
 #block_container > div {
-  display: inline-block;
-  vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
-table {
-  border-collapse: collapse;
+
+/*emailus*/
+.emailus {
+display: none; 
+position: fixed; 
+z-index: 1; 
+padding-top: 250px; 
+left: 0;
+top: 0;
+  width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(117, 61, 61); 
+            background-color: rgba(0, 0, 0, 0); 
+          }
+          .emailus-content {
+            background-color: #a18c8cd2;
+            margin: auto;
+            padding: 100px;
+            border: 1px solid #a18c8c9f;
+            width: 100%;
+          }
+
+          .emailus-close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          
+          .emailus-close:hover,
+          .emialus-close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          #emailusBtn {
+            padding: 10px 40px;
+            border-radius: 12px;
+          }
+
+          #emailusBtn {
+             transition-duration: 0.4s;
+             background-color: rgba(36, 34, 63, 0.863); 
+              color:  rgb(183, 204, 223); 
+              border: 2px solid black;
+          }
+
+          #emailusmyBtn:hover {
+            background-color: #000a00; /* Green */
+            color: white;
+          }
+
+          a {
+ text-decoration: none;
+color: #000;
+}
+
+/*SIGN UP*/
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
   width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  padding: 10px 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background-color: rgba(36, 34, 63, 0.863); 
+  color:  rgb(183, 204, 223); 
+  border: 2px solid black;
+}
+          
+button:hover {
+  background-color: #000a00; /* Green */
+  color: white;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 10px 40px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.signup-container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.signup-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.signup-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.signup-close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.signup-close:hover,
+.signup-close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signup-cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*login*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    padding: 10px 40px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    background-color: rgba(36, 34, 63, 0.863); 
+    color:  rgb(183, 204, 223); 
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: #000a00; /* Green */
+    color: white;
+}
+
+/* Extra styles for the cancel button */
+.login-cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.login-imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.login-avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.login-container {
+  padding: 16px;
+}
+
+span.login-psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.login-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.login-close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login-close:hover,
+.login-close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.login-animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.login-psw {
+     display: block;
+     float: none;
+  }
+  .login-cancelbtn {
+     width: 100%;
+  }
+}
+
+
+table {
+border-collapse: collapse;
+width: 100%;
 }
 
 th, td {
-  padding: 8px;
-  text-align: center;
-  border-bottom: none;
+padding: 8px;
+text-align: center;
+border-bottom: none;
+}
+
