@@ -53,16 +53,16 @@ body
 @keyframes animate
 {
 0%{
-  background-image:url("Foto/Drinks/back1.jpg");
+  background-image:url("Foto/Drinks/back4.png");
 }
 20%{
-  background-image:url("Foto/Drinks/back2.png");
-}
-40%{
   background-image:url("Foto/Drinks/back3.png");
 }
+40%{
+  background-image:url("Foto/Drinks/back2.png");
+}
 60%{
-  background-image:url("Foto/Drinks/back4.png");
+  background-image:url("Foto/Drinks/back1.jpg");
 }
 
 
