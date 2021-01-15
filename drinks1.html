@@ -73,12 +73,13 @@
   <br>
 <div class="box1">
   <div class="imagebox">
-      <img src="Foto/Drinks/img1.webp">
+    <p style="text-align:center;">   <img src="Foto/Drinks/img1.webp"></p>
   </div>
   <div class="details"> 
       <div class="content">
 
-  <h2>Hot Apple Cider </h2>    
+        <h2 style="text-align: center ; color:white" >Hot Apple Cider </h2> 
+ 
   <p>
 Step 1
 Pour the apple cider and maple 
@@ -90,74 +91,36 @@ peel in the center of a washed square of
 cheesecloth; fold up the sides of the cheesecloth
 to enclose the bundle, then tie it up with a length
 of kitchen string. Drop the spice bundle into the cider mixture.<br>
-Step 3...  <a href="drink1.html" style="color:#f1f1f1" >Read more</a>
+Step 3...  <a href="drinks1.html" style="color:#f1f1f1" >Read more</a>
 </p>
 </div>
   </div>
 </div>
 
 
-<div class="inbox">
-<div class="item">
-<input type="checkbox" name="">
-<label>This is a checkbox text #1</label>
-</div>
-<div class="item">
-  <input type="checkbox" name="">
-  <label>This is a checkbox text #2</label>
-  </div>
-  <div class="item">
-    <input type="checkbox" name="">
-    <label>This is a checkbox text #3</label>
-    </div>
-    <div class="item">
-      <input type="checkbox" name="">
-      <label>This is a checkbox text #4</label>
-      </div>
-      <div class="item">
-        <input type="checkbox" name="">
-        <label>This is a checkbox text #5</label>
-        </div>
-        <div class="item">
-          <input type="checkbox" name="">
-          <label>This is a checkbox text #6</label>
-          </div>
-          <div class="item">
-            <input type="checkbox" name="">
-            <label>This is a checkbox text #7</label>
-            </div>
-</div>
-
-<script>
-
-
-const checkboxes=document.querySelectorAll('.inbox input [type="checkbox"]');
-let lastChecked;
-
-function handCheck(e)
-{
-  let inBetween = false;
-if(e.shiftkey && this.checked){
-  checkboxes.forEach(checkbox => {
-    console.log(checkbox);
-    if(checkbox == this || checkbox == lastChecked )
-    inBetween=!inBetween;
-    console.log ('Starting to check them inBetween!');
-    })
-  if (inBetween)
-  {
-
-checkbox.checked = true;
-  }
-}
-lastChecked=this;
-}
-
-checkboxes.forEach(checkbox=>checkbox.addEventListener('click',handlecheck));
-
-
-</script>
+ 
 <br>
+        
+        
+<p id="ingredients"><ins>Ingredients</ins></p>
+
+<form name="Ingredients" title="Ingredients"> 
+
+    <input type="checkbox" id="i1" name="i1" value="butter">
+    <label for="i1"> 2 teaspoons kosher salt</label><br>
+    <input type="checkbox" id="i2" name="i2" value="salt">
+    <label for="i2"> 1 cup unsalted butter softened</label><br>
+    <input type="checkbox" id="i3" name="i3" value="pepper">
+    <label for="i3"> 1 teaspoon coarse ground black pepper</label><br>
+    <input type="checkbox" id="i4" name="i4" value="turkey">
+    <label for="i4"> 1 turkey 16-18 pounds, patted dry</label><br>
+    <input type="checkbox" id="i4" name="i4" value="stock">
+    <label for="i4">8 cups chicken stock</label><br>
+    
+
+</form>
+<br>
+
 
 </main>
   <br>
