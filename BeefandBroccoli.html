@@ -48,6 +48,24 @@ form{
     </style>
 </head>
 <body>
+     <!-- localStorage -->
+    <script type="text/javascript">
+  setTimeout(fshehStoPro,15000);
+    document.onload = clickCounter();
+    function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "Ju keni vizituar kete ushqim: " + localStorage.clickcount + " here.";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    
+    </script>
     <header>
           <div class="header">
             <h1>FOOD</h1>
@@ -78,7 +96,8 @@ form{
         <p style="text-align:center;" id="rotate3D"><img src="/Foto/Food/BeefAndBroccoli.png" alt="Beef And Broccoli" class="ImageSpin"></p>
         
         <br>
-        
+         <p><button onclick="clickCounter()" type="button">Kliko per te shikuar numrin e vizitave qe i ke bere ushqimit</button></p>
+        <div id="result" ></div>
         
             <p id="ingredients"><ins>Ingredients</ins></p>
 
