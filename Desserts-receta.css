@@ -89,3 +89,10 @@ hr {
   border-radius:10px;
   background: linear-gradient(to left,red,pink);
 }
+img{
+
+  width:500px;
+  height:500px;
+  outline-style: double;
+  outline-color: red;
+}
