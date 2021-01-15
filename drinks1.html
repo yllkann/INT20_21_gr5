@@ -14,8 +14,6 @@
     
         <body>
             
-
-        
         <div class="headeer">
           <h1>DRINKS</h1>
           <p>Food To Your Heart</p>
@@ -99,20 +97,72 @@ Step 3...  <a href="drink1.html" style="color:#f1f1f1" >Read more</a>
 </div>
 
 
+<div class="inbox">
+<div class="item">
+<input type="checkbox" name="">
+<label>This is a checkbox text #1</label>
+</div>
+<div class="item">
+  <input type="checkbox" name="">
+  <label>This is a checkbox text #2</label>
+  </div>
+  <div class="item">
+    <input type="checkbox" name="">
+    <label>This is a checkbox text #3</label>
+    </div>
+    <div class="item">
+      <input type="checkbox" name="">
+      <label>This is a checkbox text #4</label>
+      </div>
+      <div class="item">
+        <input type="checkbox" name="">
+        <label>This is a checkbox text #5</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="">
+          <label>This is a checkbox text #6</label>
+          </div>
+          <div class="item">
+            <input type="checkbox" name="">
+            <label>This is a checkbox text #7</label>
+            </div>
+</div>
+
+<script>
 
 
+const checkboxes=document.querySelectorAll('.inbox input [type="checkbox"]');
+let lastChecked;
+
+function handCheck(e)
+{
+  let inBetween = false;
+if(e.shiftkey && this.checked){
+  checkboxes.forEach(checkbox => {
+    console.log(checkbox);
+    if(checkbox == this || checkbox == lastChecked )
+    inBetween=!inBetween;
+    console.log ('Starting to check them inBetween!');
+    })
+  if (inBetween)
+  {
+
+checkbox.checked = true;
+  }
+}
+lastChecked=this;
+}
+
+checkboxes.forEach(checkbox=>checkbox.addEventListener('click',handlecheck));
 
 
-
-
-
-
+</script>
+<br>
 
 </main>
   <br>
-  
-  
-  
+  <br>
+
   <!--Footer-->
           
         

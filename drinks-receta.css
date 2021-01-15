@@ -140,14 +140,59 @@ body
     }
   }
 
+.inbox 
+{
+
+  max-width: 460px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 8px 14px 20px rgba(40,28,79,34);
+
+}
+
+.item 
+{
+display: flex;
+align-items: center;
+border-bottom: 1px solid #d8dff1;
+
+}
 
 
+.item :last-child
+{
+  border-bottom: 0;
+}
 
-
-
-
-
+input:checked + label
+{
+background: darkblue;
+text-decoration: line-through;
+color: darkcyan;
+transition: 0.1s ease-out;
+}
   
+input[type="checkbox"]
+{
+
+  margin: 20px;
+
+}
+
+label {
+margin: 0;
+padding: 20px;
+transition:background 0.2s;
+flex: 1;
+font-size: 1.2rem ;
+border-left: 1px solid #d8dff1;
+color: darkgoldenrod;
+
+}
+
+
+
+
 
 /*Pjesa footer*/
 
