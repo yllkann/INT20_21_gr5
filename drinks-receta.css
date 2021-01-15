@@ -1,8 +1,8 @@
- *{
+* {
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;}
-
+    box-sizing: border-box;
+}
 html
 {
     overflow: scroll;
@@ -23,456 +23,10 @@ body
 {
 
 
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+    background-image:url("Foto/Drinks/back.jpg");
 
 
 }
-
-.cont
-{
-  height:100pv;
-  width:100%;
-  background-image:url("Foto/Drinks/back.jpg");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   transition: 5s;
-
-   animation-name: animate ;
-   animation-direction:alternate-reverse ;
-   animation-duration:30s ;
-   animation-fill-mode: forwards;
-   animation-timing-function:infinite ;
-   animation-play-state:running ;
-   animation-timing-function: ease-in-out;
-}
-
-@keyframes animate
-{
-0%{
-  background-image:url("Foto/Drinks/back1.jpg");
-}
-20%{
-  background-image:url("Foto/Drinks/back2.png");
-}
-40%{
-  background-image:url("Foto/Drinks/back3.png");
-}
-60%{
-  background-image:url("Foto/Drinks/back4.png");
-}
-
-
-}
-
-
-
-
-.container
-{
- width:1550px;
-  margin: 10px auto;
-  display:inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: 100px;
- 
-}
-
-.container .box1
-{
-
-position: relative;
-width:340px;
-height:340px;
-background: plum;
-margin: 20px;
-
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box1 .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box1 .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box1:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box1 .details
-{
-
-position: absolute;
-top:20px;
-left: 20px;
-bottom:20px;
-right:20px;
-background: rgba(0,0,0,.8) ;
-transform: scaleY(0);
-transition:transform .5s ;
-
-}
-.container .box1:hover .details
-{
-    transform: scaleY(1);
-
-}
-.container .box1 .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box1 .details .content .h2
-{
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-color:white;
-}
-.container .box1 .details .content .p
-{
-    margin:10px 0 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-.container .box2
-{
-
-position: relative;
-width:340px;
-height:340px;
-background: plum;
-margin: 20px;
-
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box2 .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box2 .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box2:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box2 .details
-{
-
-position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
-background: rgba(0,0,0,.8) ;
-transform: scaleY(0);
-transition:transform .5s ;
-
-}
-.container .box2:hover .details
-{
-    transform: scaleY(1);
-
-}
-.container .box2 .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box2 .details .content .h2
-{
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-color:white;
-}
-.container .box2 .details .content .p
-{
-    margin:10px 0 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-.container .box3
-{
-
-position: relative;
-width:340px;
-height:340px;
-background: plum;
-margin: 20px;
-
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box3 .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box3 .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box3:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box3 .details
-{
-
-position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
-background: rgba(0,0,0,.8) ;
-transform: scaleY(0);
-transition:transform .5s ;
-
-}
-.container .box3:hover .details
-{
-    transform: scaleY(1);
-
-}
-.container .box3 .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box3 .details .content .h2
-{
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-color:white;
-}
-.container .box3 .details .content .p
-{
-    margin:10px 0 0;
-    padding: 0;
-}
-
-
-
-
-.container .box4
-{
-
-position: relative;
-width:340px;
-height:340px;
-background: plum;
-margin: 20px;
-
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box4 .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box4 .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box4:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box4 .details
-{
-
-position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
-background: rgba(0,0,0,.8) ;
-transform: scaleY(0);
-transition:transform .5s ;
-
-}
-.container .box4:hover .details
-{
-    transform: scaleY(1);
-
-}
-.container .box4 .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box4 .details .content .h2
-{
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-color:white;
-}
-.container .box4 .details .content .p
-{
-    margin:10px 0 0;
-    padding: 0;
-}
-
-
-
-
-
-.container .box5
-{
-
-position: relative;
-width:340px;
-height:340px;
-background: plum;
-margin: 20px;
-
-box-sizing:border-box ;
-display: inline-block;
-}
-.container .box5 .imagebox
-{
-    position: relative;
-    overflow: hidden;
-}
-.container .box5 .imagebox img
-{
- max-width: 100%;   
-transition: transform 2s;
-}
-
-.container .box1:hover .imagebox img
-{
-
-transform: scale(1.2);
-}
-
-.container .box5 .details
-{
-
-position: absolute;
-top:10px;
-left: 10px;
-bottom:10px;
-right:10px;
-background: rgba(0,0,0,.8) ;
-transform: scaleY(0);
-transition:transform .5s ;
-
-}
-.container .box5:hover .details
-{
-    transform: scaleY(1);
-
-}
-.container .box5 .details .content
-{
-
-position: absolute;
-top:50%;
-transform: translateY(-50%);
-text-align: center;
-padding: 15px;
-color:white;
-}
-
-.container .box5 .details .content .h2
-{
-    margin:0;
-    padding: 0;
-    font-size: 20px;
-color:white;
-}
-.container .box5 .details .content .p
-{
-    margin:10px 0 0;
-    padding: 0;
-}
-
-
-
-#cold
-{
-    text-align: center;
-color:rgb(120, 101, 138);
-margin: 50px;
-    font-weight: bold;
-}
-
-
-hr {
-    height:5px;
-    border:none;
-    border-radius:10px;
-    background: linear-gradient(to left,rgb(75, 4, 69),plum);
-  }
 
 
 /* Nav bar */
@@ -586,12 +140,65 @@ hr {
     }
   }
 
+.inbox 
+{
+
+  max-width: 460px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 8px 14px 20px rgba(40,28,79,34);
+
+}
+
+.item 
+{
+display: flex;
+align-items: center;
+border-bottom: 1px solid #d8dff1;
+
+}
+
+
+.item :last-child
+{
+  border-bottom: 0;
+}
+
+input:checked + label
+{
+background: darkblue;
+text-decoration: line-through;
+color: darkcyan;
+transition: 0.1s ease-out;
+}
+  
+input[type="checkbox"]
+{
+
+  margin: 20px;
+
+}
+
+label {
+margin: 0;
+padding: 20px;
+transition:background 0.2s;
+flex: 1;
+font-size: 1.2rem ;
+border-left: 1px solid #d8dff1;
+color: darkgoldenrod;
+
+}
+
+
+
+
 
 /*Pjesa footer*/
 
 .footer {
-    color: rgb(215, 183, 223);
-    background-color: rgba(129, 58, 143, 0.863);
+    color: rgb(183, 204, 223);
+    background-color: rgba(36, 34, 63, 0.863);
     padding-top: 20px;
     border-radius: 0%;
     
@@ -662,19 +269,19 @@ hr {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgb(148, 58, 136); 
-    background-color: rgba(160, 36, 135, 0); 
+    background-color: rgb(117, 61, 61); 
+    background-color: rgba(0, 0, 0, 0); 
   }
   .emailus-content {
-    background-color: #c783bcd2;
+    background-color: #a18c8cd2;
     margin: auto;
     padding: 100px;
-    border: 1px solid #c98eb79f;
+    border: 1px solid #a18c8c9f;
     width: 100%;
   }
   
   .emailus-close {
-    color: #ce4eb2;
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -735,9 +342,9 @@ hr {
     padding: 10px 40px;
     border-radius: 12px;
     transition-duration: 0.4s;
-    background-color: rgba(63, 34, 62, 0.863); 
+    background-color: rgba(36, 34, 63, 0.863); 
     color:  rgb(183, 204, 223); 
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid black;
   }
               
     button:hover {
@@ -748,7 +355,7 @@ hr {
     /* Extra styles for the cancel button */
     .cancelbtn {
       padding: 10px 40px;
-      background-color: #610955;
+      background-color: #f44336;
     }
     
     /* Float cancel and signup buttons and add an equal width */
