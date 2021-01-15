@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="Desserts-receta.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Food To Your Heart</title>
+</head>
+<body>
+    <header>
+
+          <div class="headeer">
+            <h1>DESSERTS</h1>
+            <p>Food To Your Heart</p>            
+          </div>
+
+    </header>
+    
+    <main>
+      <div class="btopnav" id="bmyTopnav">
+        <a href="index.html " class="bactive"> <i class="fa fa-home icons"></i>  Home</a>
+        <a href="Food.html"><i class="fa fa-cutlery icons"> </i>  Food</a>
+        <div class="bdropdown">
+          <button class="bdropbtn"> <i class="fa fa-birthday-cake icons"></i>  Dessert
+            <i class="bfa bfa-caret-down"></i>
+          </button>
+          <div class="bdropdown-content">
+            <a href="#">Baking</a>
+            <a href="#">Non-Baking</a>
+            <a href="#">Frozen</a>
+             <a href="#">Pastries</a>
+        </div>
+      </div> 
+      <a href="Drinks.html"><i class="fa fa-glass icons"> </i>  Drinks</a>
+      <a href="#login-id01"> <i class="fa fa-birthday-cake icons"></i>  Log In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("bmyTopnav");
+        if (x.className === "btopnav") {
+          x.className += " bresponsive";
+        } else {
+          x.className = "btopnav";
+        }
+      }
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("bmyTopnav");
+      var sticky = header.offsetTop;
+    
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
