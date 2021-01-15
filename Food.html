@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="Food.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <title>Food To Your Heart</title>
 </head>
 <body>
     <header>
-    <div>
-        <br> <br> <br> 
-        <h1>Food Recipes</h1> 
-    </div>
-    <nav >
-        <ul>
-            <li class="Navbar"><a href="index.html">
-                <i class="fa fa-home" aria-hidden="true"></i>
-                Home</a></li>
-            <li class="Navbar"><a href="Food.html">
-                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                 Food</a>
-               
-            </li>
-            <li class="Navbar"><a href="Desert.html">
-                <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                Desert</a>
-            
-        </li>
-            <li class="Navbar"><a href="Drinks.html">
-                <i class="fa fa-glass" aria-hidden="true"></i>
-                Drinks</a>
-                
-            </li>
-            <li class="Navbar"><a href="LogInSignUp.html">
-                <i class="fa fa-sign-in" aria-hidden="true"></i>
-                LogIn/SignUp</a></li>
-        </ul>
+          <div class="header">
+            <h1>FOOD</h1>
+            <p>Food To Your Heart</p>
+          </div>
         
-      </nav>
-
     </header>
-    
+
     <main>
+        <div class="btopnav" id="bmyTopnav">
+          <a href="index.html " class="bactive">Home</a>
+          <div class="bdropdown">
+            <button class="bdropbtn">Food 
+              <i class="bfa bfa-caret-down"></i>
+            </button>
+            <div class="bdropdown-content">
+              <a href="#">Meat</a>
+              <a href="#">Vegetarian</a>
+              <a href="#">Vegan</a>
+              <a href="#">Your recipe</a>
+            </div>
+          </div> 
+           <a href="Dessert.html">Desserts</a>
+          <a href="Drinks.html">Drinks</a>
+          <a href="#login-id01">Log In</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("bmyTopnav");
+          if (x.className === "btopnav") {
+            x.className += " bresponsive";
+          } else {
+            x.className = "btopnav";
+          }
+        }
+        </script>
+        
+    
        
     
        
@@ -104,6 +109,8 @@
                 </div>
             </div>
         </span>
+
+
         <br>
         <hr>
 
@@ -224,9 +231,15 @@
             <div class="row">
                 <div class="col-12">
                     <button class="Allrecipes"> <b>See all vegan recipes
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    </b></button>
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i></b>
+                        
+                    </button>
+                
+                
+                                 
+
                 </div>
+
             </div>
         </span>
         <br> <hr>
@@ -241,127 +254,166 @@
         </div>
 
 
-        <!-- Ose    -->
-
-        <div class="boxxx">
-            <img src="/Foto/Food/BeefAndBroccoli.png" alt="Beef and Broccol ">
-            <h2>Beef and Broccoli  </h2>
-            <pre>
-                Beef and Broccoli is a healthy Chinese food option with tender slices of meat and tender broccoli in less than 30 minutes and just a few ingredients!
-                
-                
-                    >Prep time: 10 minutes
-                    Cook Time: 20 minutes
-                Total time: 30 minutes
-                Course: Main Dish
-                Cuisine: Chinese
-                
-                Ingredients
-                1/2 cup oyster sauce 
-                1/4 cup cornstarch
-                1/4 cup cooking sherry 
-                1 tablespoon low sodium soy sauce 
-                1 tablespoon white sugar 
-                1 pound flank steak sliced thinly against the grain
-                2 tablespoons canola oil
-                2 cloves garlic minced
-                2 teaspoon ginger minced
-                1 pound broccoli cut into bite size chunks
-                US Customary - Metric
-                Instructions
-                Note: click on times in the instructions to start a kitchen timer while cooking. 
-                1.	Add everything except the canola oil, garlic, ginger and broccoli into a large bowl and mix well, and let marinate for at least 15 minutes. 
-                2.	In a wok add canola oil on high heat and add in half the beef and cook for 1-2 minutes on each side before cooking the second half of the beef another 1-2 minutes on each side. 
-                3.	Add in the garlic and ginger, stir and cook for 30 seconds and pour in the marinade and broccoli, cover and cook until the sauce thickens before adding the beef back in to coat with sauce. 
-
-            </pre>
-            <a href="javascript:void();" class="readmore-btn"> Read more </a>
-
-        </div>
 
 
-
-        <div class="boxxx">
-            <img src="/Foto/Food/BeefAndBroccoli.png" alt="Beef and Broccol ">
-            <h2>Beef and Broccoli  </h2>
-            <pre>
-                Beef and Broccoli is a healthy Chinese food option with tender slices of meat and tender broccoli in less than 30 minutes and just a few ingredie
-                
-                    Prep time: 10 min
-                    Cook Time: 20 minutes
-                    Total time: 30 min
-                    Course: Main 
-                    Cuisine: Chi
-                
-                Ingredients
-                1/2 cup oyster sauce 
-                1/4 cup cornstarch
-                1/4 cup cooking sherry 
-                1 tablespoon low sodium soy sauce 
-                1 tablespoon white sugar 
-                1 pound flank steak sliced thinly against the grain 
-                2 tablespoons canola oil 
-                2 cloves garlic minced 
-                2 teaspoon ginger minced 
-                1 pound broccoli cut into bite size chunks 
-                US Customary - Metric 
-                Instructions 
-                Note: click on times in the instructions to start a kitchen timer while cooking. <br>
-                1.	Add everything except the canola oil, garlic, ginger and broccoli into a large bowl and mix well, and let marinate for at least 15 minutes. 
-                2.	In a wok add canola oil on high heat and add in half the beef and cook for 1-2 minutes on each side before cooking the second half of the beef another 1-2 minutes on each side. 
-                3.	Add in the garlic and ginger, stir and cook for 30 seconds and pour in the marinade and broccoli, cover and cook until the sauce thickens before adding the beef back in to coat with sauce. 
-
-            </pre>
-            <a href="javascript:void();" class="readmore-btn"> Read more </a>
-
-        </div>
-
-
-        <div class="boxxx">
-            <img src="/Foto/Food/BeefAndBroccoli.png" alt="Beef and Broccol ">
-            <h2>Beef and Broccoli  </h2>
-            <pre>
-                Beef and Broccoli is a healthy Chinese food option with tender slices of meat and tender broccoli in less than 30 minutes and just a few ingredients!
-                
-                
-                Prep time: 10 minutes
-                Cook Time: 20 minutes
-                Total time: 30 minutes
-                Course: Main Dish
-                Cuisine: Chinese
-                
-                Ingredients 
-                1/2 cup oyster sauce  
-                1/4 cup cornstarch 
-                1/4 cup cooking sherry 
-                1 tablespoon low sodium soy sauce  
-                1 tablespoon white sugar 
-                1 pound flank steak sliced thinly against the grain 
-                2 tablespoons canola oil 
-                2 cloves garlic minced 
-                2 teaspoon ginger minced 
-                1 pound broccoli cut into bite size chunks 
-                US Customary - Metric 
-                Instructions 
-                Note: click on times in the instructions to start a kitchen timer while cooking. 
-                1.	Add everything except the canola oil, garlic, ginger and broccoli into a large bowl and mix well, and let marinate for at least 15 minutes. 
-                2.	In a wok add canola oil on high heat and add in half the beef and cook for 1-2 minutes on each side before cooking the second half of the beef another 1-2 minutes on each side. 
-                3.	Add in the garlic and ginger, stir and cook for 30 seconds and pour in the marinade and broccoli, cover and cook until the sauce thickens before adding the beef back in to coat with sauce. 
-
-            </pre>
-            <a href="javascript:void();" class="readmore-btn"> Read more </a>
-
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-         <script>
- 
-            $("readmore-btn").on('click', function(){
-                $(this).parent().toggleClass("showContent");
-            })
-        </script> 
-
+        
     </main>
 </body> 
+<!--Footer-->
+<footer class="footer">
+       
+    <div id="block_container">
+    <div id="div1" >
+      <ul class="nav">
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>  
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-pinterest"></a></li> 
+      </ul>
+    </div>
+   
+    
+  
+
+
+ 
+    <div>
+       
+        
+        <button onclick="document.getElementById('login-id01').style.display='block'" style="width:auto;">Login</button>
+        
+        <div id="login-id01" class="login-modal">
+          
+          <form class="login-modal-content animate" action="/action_page.php" method="post">
+            <div class="login-imgcontainer">
+              <span onclick="document.getElementById('login-id01').style.display='none'" class="login-close" title="Close Modal">&times;</span>
+              <img src="img_avatar2.png" alt="Avatar" class="login-avatar">
+            </div>
+        
+            <div class="login-container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="login-container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('login-id01').style.display='none'" class="login-cancelbtn">Cancel</button>
+              <span class="login-psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('login-id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    </div>
+    <div>
+        
+        <button onclick="document.getElementById('signup-id01').style.display='block'" style="width:auto;">Sign Up</button>
+        
+        <div id="signup-id01" class="signup-modal">
+          <span onclick="document.getElementById('signup-id01').style.display='none'" class="signup-close" title="Close Modal">&times;</span>
+          <form class="signup-content" action="/action_page.php">
+            <div class="signup-container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('signup-id01').style.display='none'" class="signup-cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('signup-id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("bmyTopnav");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+        </script>
+    </div>
+  </div>
+
+<div>
+<table>
+<tr>
+  <th><a href="Food.html">FOOD</a></th>
+    <th><a href="Dessert.html">DESSERT</a></th>
+    <th><a href="Drinks.html">DRINKS</a></th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+</div>
+   
+  </footer>
+</body>
 </html>
