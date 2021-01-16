@@ -81,6 +81,32 @@
       </ol>
   </dd>
 </dl>
+<p>How many ingredients do you have for this recipe:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction1()">Enter</button>
+<p id="p01"></p>
+
+<script>
+function myFunction1() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+ 
+    
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "less ingredients";
+    if(x > 10)   throw "more ingredients";
+  }
+  catch(error) {
+    message.innerHTML = "You have " + error;
+  }
+}
+</script>
 <hr>
 
 <footer class="footer">
