@@ -11,7 +11,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+  <script>
+    function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+          sessionStorage.clickcount = 1;
+        }
+        document.getElementById("rezultati").innerHTML = "Ju keni vizituar faqen hyrese " + sessionStorage.clickcount + " here ne kete sesion.";
+      } else {
+        document.getElementById("rezultati").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    </script>
     
 
 </head>
@@ -22,7 +35,8 @@
     <div class="image">
       <div class="text1">
         <h1 style="font-size:xxx-large;">FOOD TO YOUR HEART</h1>
-        <p style="font-size: x-large;">We bring life to your table</p>
+        <p  onclick="clickCounter()" style="font-size: x-large;">We bring life to your table</p>
+        <div id="rezultati"></div>
         <span onclick="openNav()">Menu</span>
       </div>
     </div>
