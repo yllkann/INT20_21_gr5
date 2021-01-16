@@ -37,8 +37,42 @@
        <p style="text-align:center;"><img src="FOTO/Desserts/2b.jpg"  alt="Chocolate cake" class="ImageSpin"></p>
        <br>
        <br>
-        
 
+       <style>
+        #div11 {
+          width: 350px;
+          height: 70px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        #drag1{
+          width: 250px;
+          height: 50px;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        
+        </script>
+        <p>If you love chocolate cake ,put it in the box</p>
+
+        <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img id="drag1" src="FOTO/Desserts/love.png" draggable="true" ondragstart="drag(event)" >
+        
+       
        <p id="ingredients"><ins>Ingredients</ins></p>
 
 
