@@ -1,6 +1,6 @@
 /*Pjesa perfshirese*/
 html{
-  background-color: rgba(66, 41, 41, 0.164);
+  background-color: rgba(0, 0, 0, 0.822);
 }
 
 /*PJESA  E BODY*/
@@ -169,31 +169,26 @@ vertical-align: middle;
   background-color: #ffe5b293;
   margin-left: 10px;
   margin-right: 20px;
-  border: 2px solid orange;
+  border: 2px solid rgb(255, 166, 0);
+  
   
   
 }
 .desserttheme{
-  background-color: #ffe7cbd2;
+  background-color: #ffe7cb;
   margin-left: 10px;
   margin-right: 20px;
   border:2px solid pink ;
 }
 .drinkstheme{
-  background-color: #f0d1f2cb;
+  background-color: #f0d1f2;
   margin-left: 10px;
   margin-right: 20px;
   border: 2px solid violet;
 }
-.boxi1{
-  background-color: #cb8a8238;
-  margin-left: 10px;
-  margin-right: 20px;
-  border: 2px solid salmon;
-  
-}
 .teksti{
   margin-left: 20px;
+  color: #f0d1f2cb;
 }
 
 .wrapper {
@@ -279,7 +274,9 @@ vertical-align: middle;
   margin-bottom: 20px;
 
 }
-
+.map{
+ margin-left: 100px;
+}
 /*footer*/
 
 /*Pjesa footer*/
