@@ -87,7 +87,7 @@ p .ImageSpin{
        transform: rotateX(30deg)
    
        }
-   to: {
+   to {
        transform: rotateX(360deg);
        }
    }
