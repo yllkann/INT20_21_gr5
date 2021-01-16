@@ -45,5 +45,21 @@ if (window.pageYOffset > sticky) {
 }
 
 
-
+function validateForm() {
+  var x = document.forms["YourRecipe"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var x = document.forms["YourRecipe"]["urrecipe"].value;
+  if (x == "") {
+    alert("Recipe name must be filled out");
+    return false;
+  }
+  var x = document.forms["YourRecipe"]["recipe"].value;
+  if (x == "") {
+    alert("Recipe instructions must be filled out");
+    return false;
+  }
+}
 
