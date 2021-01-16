@@ -46,8 +46,22 @@ form{
     margin: 35px;
 }
     </style>
+    <script>
+    function time() {
+    var today = new Date();
+    var h = today.getHours()
+    if (h >= 6) {
+    document.body.style.backgroundColor = 'rgb(150,90,'+h+')';
+    var t = setTimeout(time, 500);
+    }else
+    {
+    document.body.style.backgroundColor = 'rgb(100,90,'+h+')';
+    var t = setTimeout(time, 500);
+};
+}
+  </script>
 </head>
-<body>
+<body onload="time()">
     <header>
           <div class="header">
             <h1>FOOD</h1>
