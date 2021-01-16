@@ -6,26 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="Desserts-receta.css">
     <title>Food To Your Heart</title>
-    <style>
-      form{
-    /* background-color: rgb(110, 109, 109); */
-    font-family: monospace,serif;
-    margin: 35px;
-    color: rgb(235, 119, 173);
-    font-size: 20px;
-}
-#share {
-    padding: 0.5rem 1rem;
-    background-color:rgb(192, 38, 64);
-    border: 2px solid rgb(243, 94, 8);
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-    margin: 0;
-}
-    </style>
 </head>
 <body>
     <header>
@@ -52,9 +32,9 @@
           
 
        <br>
-       <form name="YourRecipe" onsubmit="return validateForm()" method="post">
+       <form>
         <h3 style="font-size:300%; text-align: center;">Share your recipe </h3>
-        <label for="emri">Full Name</label>
+        <label for="emri">Emri dhe mbiemri</label>
         <input type="text" name="emri" id="emri">
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
@@ -70,28 +50,7 @@
         <input type="file" id="myfile" name="myfile"><br><br>
         <input type="submit" value="Share here" action="/action_page.php" id="share">
     </form>
-
-    <script>
-      function validateForm() {
-  var x = document.forms["YourRecipe"]["name"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  var x = document.forms["YourRecipe"]["urrecipe"].value;
-  if (x == "") {
-    alert("Recipe name must be filled out");
-    return false;
-  }
-  var x = document.forms["YourRecipe"]["recipe"].value;
-  if (x == "") {
-    alert("Recipe instructions must be filled out");
-    return false;
-  }
-}
-
-    </script>
-
+    </main>
 <hr>
 <footer class="footer">
        
@@ -285,3 +244,5 @@
 </div>
  
 </footer>
+</body>
+</html>
