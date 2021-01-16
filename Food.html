@@ -18,7 +18,7 @@
     </header>
 
     <main>
-        <div class="cont">
+       <div class="cont">
         <div class="btopnav" id="bmyTopnav">
           <a href="index.html " class="bactive"> <i class="fa fa-home icons" > </i> Home</a>
           <div class="bdropdown">
@@ -36,9 +36,11 @@
           <a href="Drinks.html"> <i class="fa fa-glass icons" > </i> Drinks</a>
           <a href="#signin"> <i class="fa fa-sign-in icons" ></i> Log In</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="bicon" onclick="myFunction()">&#9776;</a>
-        </div>
-       
+      </div>
         
+
+    
+
         <br>
         <br>
         <em>
@@ -278,13 +280,13 @@
         
         <div id="login-id01" class="login-modal">
           
-          <form class="login-modal-content animate" action="/action_page.php" method="post">
+          <form class="login-modal-content animate" action="/action_page.php" method="post" autocomplete="on">
             <div class="login-imgcontainer">
               <span onclick="document.getElementById('login-id01').style.display='none'" class="login-close" title="Close Modal">&times;</span>
             </div>
         
             <div class="login-container">
-              <label for="uname"><b>Username</b></label>
+              <label for="uname" ><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required>
         
               <label for="psw"><b>Password</b></label>
@@ -321,7 +323,7 @@
         
         <div id="signup-id01" class="signup-modal">
           <span onclick="document.getElementById('signup-id01').style.display='none'" class="signup-close" title="Close Modal">&times;</span>
-          <form class="signup-content" action="/action_page.php">
+          <form class="signup-content" action="/action_page.php" autocomplete="on">
             <div class="signup-container">
               <h1>Sign Up</h1>
               <p>Please fill in this form to create an account.</p>

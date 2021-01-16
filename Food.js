@@ -43,3 +43,40 @@ if (window.pageYOffset > sticky) {
   header.classList.remove("sticky");
 }
 }
+
+
+
+jQuery(document).ready(function( $ ){
+
+  var thehours = new Date().getHours();
+    var themessage;
+    var morning = ('Good morning');
+    var afternoon = ('Good afternoon');
+    var evening = ('Good evening');
+  
+    if (thehours >= 0 && thehours < 12) {
+      themessage = morning;
+      $("#greeting").addClass("morning");
+  
+    } else if (thehours >= 12 && thehours < 17) {
+      themessage = afternoon;
+      $("#greeting").addClass("afternoon");
+  
+    } else if (thehours >= 17 && thehours < 24) {
+      themessage = evening;
+      $("#greeting").addClass("evening");
+    }
+  
+    $('#greeting').append(themessage);
+    
+  });
+
+
+
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Username must be filled out");
+      return false;
+    }
+  }
