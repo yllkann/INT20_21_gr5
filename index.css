@@ -95,7 +95,7 @@ vertical-align: middle;
 .container-fluide {
   margin-top: 15px;
   padding: 60px 50px;
-  background-color: #FEC8D8;
+  background-color: #fec8d8b4;
 }
 
 
@@ -165,27 +165,6 @@ display: inline-block;
 vertical-align: middle;
 }
 
-.foodtheme{
-  background-color: #ffe5b293;
-  margin-left: 10px;
-  margin-right: 20px;
-  border: 2px solid rgb(255, 166, 0);
-  
-  
-  
-}
-.desserttheme{
-  background-color: #ffe7cb;
-  margin-left: 10px;
-  margin-right: 20px;
-  border:2px solid pink ;
-}
-.drinkstheme{
-  background-color: #f0d1f2;
-  margin-left: 10px;
-  margin-right: 20px;
-  border: 2px solid violet;
-}
 .teksti{
   margin-left: 20px;
   color: #f0d1f2cb;
@@ -275,7 +254,7 @@ vertical-align: middle;
 
 }
 .map{
- margin-left: 100px;
+align-items: center;
 }
 /*footer*/
 
