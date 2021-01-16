@@ -91,7 +91,7 @@
         </div>
     </div>
     <div class="card">
-        <img src="FOTO/Food/LoMein.png" alt="LoMEin">
+        <img src="FOTO/Food/LoMein.png" alt="Chicken Lo Mein">
         <div class="info">
             <h5>Chicken Lo Mein</h5>
             <p>Chicken Lo Mein with chewy Chinese egg noodles, bean sprouts,
@@ -128,7 +128,7 @@
             </div>
 
             <div class="card" >
-                <img src="FOTO/Food/GreenBean.jpg" alt="Green Bean">
+                <img src="FOTO/Food/GreenBean.jpg" alt="Stevestop Green Bean Casserole">
                 <div class="info">
                     <h5>Stovetop Green Bean Casserole</h5>
                     <p>Stovetop Green Bean Casserole recipe is an
@@ -142,7 +142,7 @@
             </div>
 
             <div class="card">
-                <img src="FOTO/Food/VodkaSauce.jpg" alt="">
+                <img src="FOTO/Food/VodkaSauce.jpg" alt="Vodka Sauce">
                 <div class="info">
                     <h5>Vodka Sauce</h5>
                     <p>This homemade Vodka Sauce recipe is so easy
@@ -179,7 +179,7 @@
         <br>
         <div class="wrapper">
             <div class="card">
-                <img src="FOTO/Food/RainbowVegetables.jpg" alt="">
+                <img src="FOTO/Food/RainbowVegetables.jpg" alt="Rainbow Roasted Vegetables">
                 <div class="info">
                     <h5>Rainbow Roasted Vegetables</h5>
                     <p>
@@ -187,14 +187,16 @@
                          way to enjoy eating healthy, colorful vegetables
                           for adults and kids! Makes a perfect side for
                            quick meals or dinner parties where you want
-                            to impress!</p>
+                            to impress!
+                            <a href="RainbowVegetables.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
+                        </p>
                     
                 </div>
             </div>
 
 
             <div class="card">
-                <img src="FOTO/Food/MexicanSalad.jpg" alt="Mexican Salad">
+                <img src="FOTO/Food/MexicanSalad.jpg" alt="Mexican Corn Salad">
                 <div class="info">
                     <h5>Mexican Corn Salad</h5>
                     <p>
@@ -202,7 +204,8 @@
                         for your summer bbq with corn, mayo, lime juice,
                          chili powder, cilantro and cotija cheese that
                           gives you elote flavors without the cob!
-                    </p>
+                          <a href="MexicanSalad.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
+                        </p>
                     
                 </div>
             </div>
@@ -216,12 +219,14 @@
                         These Perfect Sautéed Mushrooms are an easy,
                          delicious side dish, caramelized in butter with
                           garlic; a great recipe for pasta, steak or pork
-                           chops!</p>
+                           chops!
+                           <a href="SauteedMushrooms.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
+                        </p>
                     
                 </div>
             </div>
             <div class="card">
-                <img src="FOTO/Food/GarlicNoodles.png" alt="Garlic Noodles">
+                <img src="FOTO/Food/GarlicNoodles.png" alt="P.F Chang's Garlic Noodles">
                 <div class="info">
                     <h5>P.F. Chang’s Garlic Noodles</h5>
                     <p>
@@ -229,6 +234,7 @@
                          noodle dish copycat dish you can make without the heavy
                           flavors of a chow mein and as the perfect base for your
                            favorite stir fry meals.
+                           <a href="GarlicNoodles.html" target=_blank style="text-decoration: none; color: rgb(255, 15, 107);">Read more</a>
                         
                     </p>
                     
@@ -245,36 +251,36 @@
         
     </main>
 </body> 
-<!--Footer-->
+
+
 <footer class="footer">
        
     <div id="block_container">
     <div id="div1" >
       <ul class="nav">
-        <li><a href="#" class="fa fa-twitter"></a></li>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-youtube"></a></li>  
-        <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
-        <li><a href="#" class="fa fa-pinterest"></a></li> 
+        <li><a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a></li>  
+        <li><a href="https://www.instagram.com/" target="_b;anck" class="fa fa-instagram"></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank" class="fa fa-pinterest"></a></li> 
       </ul>
     </div>
    
     
   
-
-
- 
+  
+  
+  
     <div>
        
         
-        <button onclick="document.getElementById('login-id01').style.display='block'" style="width:auto;">Login</button>
+        <button onclick="document.getElementById('login-id01').style.display='block'" id="login1" style="width:auto;">Login</button>
         
         <div id="login-id01" class="login-modal">
           
           <form class="login-modal-content animate" action="/action_page.php" method="post">
             <div class="login-imgcontainer">
               <span onclick="document.getElementById('login-id01').style.display='none'" class="login-close" title="Close Modal">&times;</span>
-              <img src="img_avatar2.png" alt="Avatar" class="login-avatar">
             </div>
         
             <div class="login-container">
@@ -297,7 +303,17 @@
           </form>
         </div>
         
-       
+        <script>
+        // Get the modal
+        var modal = document.getElementById('login-id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
     </div>
     <div>
         
@@ -333,41 +349,70 @@
           </form>
         </div>
         
-      
+        <script>
+        // Get the modal
+        var modal = document.getElementById('signup-id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        window.onscroll = function() {myFunction()};
+  
+      var header = document.getElementById("bmyTopnav");
+      var sticky = header.offsetTop;
+  
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+        </script>
     </div>
   </div>
-
-<div>
-<table>
-<tr>
+  
+  <div>
+  <table>
+  <tr>
   <th><a href="Food.html">FOOD</a></th>
     <th><a href="Dessert.html">DESSERT</a></th>
     <th><a href="Drinks.html">DRINKS</a></th>
   </tr>
   <tr>
-    <td>Peter</td>
-    <td>Griffin</td>
-    <td>$100</td>
+    <td>Meat</td>
+    <td>Baking</td>
+    <td>Hot</td>
   </tr>
   <tr>
-    <td>Lois</td>
-    <td>Griffin</td>
-    <td>$150</td>
+    <td>Vegetarian </td>
+    <td>Nonbaking</td>
+    <td>Cold</td>
   </tr>
   <tr>
-    <td>Joe</td>
-    <td>Swanson</td>
-    <td>$300</td>
+    <td>Vegan</td>
+    <td>Frozen</td>
+    <td>Alcoholic</td>
   </tr>
   <tr>
-    <td>Cleveland</td>
-    <td>Brown</td>
-    <td>$250</td>
+    <td></td>
+    <td>Pastries</td>
+    <td>Non-Alcoholic</td>
   </tr>
-</table>
-
-</div>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>New Drinks</td>
+  </tr>
+  </table>
+  
+  </div>
    
   </footer>
+  
+  
 </body>
 </html>
