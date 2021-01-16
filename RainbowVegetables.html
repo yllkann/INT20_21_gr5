@@ -208,19 +208,19 @@ form{
       
       <div id="signup-id01" class="signup-modal">
         <span onclick="document.getElementById('signup-id01').style.display='none'" class="signup-close" title="Close Modal">&times;</span>
-        <form class="signup-content" action="/action_page.php">
+        <form class="signup-content" id="signupform" method="POST" action="" onsubmit="return validateSignUp();">
           <div class="signup-container">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
             <hr>
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <input id="femail" type="text" placeholder="Enter Email" name="email" required>
       
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" id="fpassword" placeholder="Enter Password" name="psw" required>
       
             <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="password" id="fpassword2" placeholder="Repeat Password" name="psw-repeat" onChange="return matchpass();" required>
             
             <label>
               <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -235,6 +235,39 @@ form{
           </div>
         </form>
       </div>
+      <script>
+        function validateSignUp()
+      {  
+        var email=document.forms["signupform"]["femail"].value;  
+        var password=document.forms["signupform"]["fpassword"].value; 
+        var regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i; 
+          
+        if (email==null || email=="" || regex.test(email) == false)
+        {  
+          alert("Email must be filled out ");  
+          return false;  
+        }
+        else if(password.length<6)
+        {  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }  
+      } 
+    
+        function matchpass()
+      {  
+        var firstpassword=document.forms["signupform"]["fpassword"].value;  
+        var secondpassword=document.forms["signupform"]["fpassword2"].value;  
+          
+        if(firstpassword==secondpassword){  
+        return true;  
+        }  
+        else{  
+        alert("Passwords must be the same!");  
+        return false;  
+        }  
+      }  
+      </script>
       
       <script>
       // Get the modal
