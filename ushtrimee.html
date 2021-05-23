@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="ushtrime.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Food To Your Heart</title>
+</head>
+<body>
+    
+    <div>
+        <button id="b1">Shfaqe tekstin e te gjitha paragrafeve</button>
+        <button id="b2">Shfaqe tekstin paragrafit te pare</button>
+        <button id="b3">Shfaqe tekstin paragrafit te fundit</button>
+    </div>
+
+    <div id="paragrafet">
+        <p id="par"> Ky eshte nje paragraf.</p>
+        <p>Ky eshte nje tjeter paragraf.</p>
+        <p>Edhe nje paragraf tjeter.</p>
+    </div>
+
+    <svg height="210" width="500">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke: rgb(255,0 , 0); stroke-width: 2; " /> 
+    </svg>
+        <p id="par"></p>
+    
+  <script>
+
+   //   $("body").load= document.getElementById("#par").style.color = 'red';
+// window.onload  =function()
+// {
+//    var b1= document.getElementById(#par);
+//    b1.style["color"]="red";
+// })
+
+
+    $('#b1').click(function(){
+         var p1= $('#paragrafet p').text();
+        alert(p1)
+    })
+    $('div button#b2').on('click',function()
+    {
+        
+        
+        var p2= $('#paragrafet p:first').text();
+        alert(p2)
+       
+    })
+
+    $('div button#b3').on('click',function(){
+        var p3 = $('#paragrafet p:last').text();
+        alert(p3)
+    })
+
+
+
+  </script>
+
+
+
+<script>
+    x=1;
+    document.writeln("<h3>Tabela e veprimit </h3>");
+    while(x<=1){
+        document.writeln("<h3> "+x+" tabela e veprimit </h3>");
+        document.writeln("<ul>")
+            for(i=1;i<=4; i++)
+            document.writeln("<li>"+i+"veprim" +x+ " = " + i * x);
+                x++;
+                document.writeln("</ul>")
+    }
+    
+
+    var xx,yy,chr;
+    for(xx=1; xx<=6; xx++)
+    {
+        for(yy=1; yy<xx; yy++){
+            chr=chr+("*");
+        }
+        document.writeln(chr);
+        document.write('<br/>');
+        chr=' ';
+    };
+    // function sum(x){
+    // return function (y){
+    //     return x+y;
+    //     };
+    // };
+    // function sum(a,b){
+    //     return a + b;
+    // };
+    // console.log(sum(2)(3));
+    // console.log(sum(2,3));
+
+    var vargu1=[2,3,4,-5] , vargu2=[4,-3,3,1];
+    let sh=0, k=0;
+    for( var i=0; i < vargu1.length; i++){
+        var y=vargu1[i];
+        if(y>=0){
+            for(var i=0; i<vargu2.length; i++)
+            {
+               var  z=vargu2[i];
+                if(z>=0){
+                    var prodhimi=1;
+                    prodhimi *=z
+                }
+                let k=1;
+                k=y*prodhimi;
+            }
+        }
+        sh+=k;
+    }
+   // document.getElementById("#par").innerHTML =typeof(sh);
+
+    var vargu= [1,8,5];
+    vargu.forEach(item => {
+	console.log(item); // Logs each 'Item #'
+
+    console.log(vargu);
+});
+
+</script>
+</body>
+</html>

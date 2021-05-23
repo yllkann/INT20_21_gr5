@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="FoodRecipes.css">
     <script src="Food.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Food To Your Heart</title>
 
     <style>
@@ -18,9 +19,9 @@ form{
     color: rgb(243, 94, 8);
     font-size: 20px;
 }
-#share {
+/* #share {
     padding: 0.5rem 1rem;
-    background-color: rgb(236, 173, 0);
+     background-color: rgb(236, 173, 0);
     border: 2px solid rgb(243, 94, 8);
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
@@ -28,7 +29,14 @@ form{
     outline: none;
     cursor: pointer;
     margin: 0;
+} */
+
+.klasa{
+  background-color: red;
+
 }
+
+
     </style>
     <script>
  
@@ -57,7 +65,9 @@ form{
         <br>
         <br>
 
-
+        <p style="float: left;">ElonaEorem ipsum dolor sit amet, corem ipsum dolor sit amet, c gsdggnaElona</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eliorem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, corem ipsum dolor sit amet, ct, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p>Elona</p><p>Elona</p><p>Elona</p><p>Elona</p>
               
         <hr>
         <br>
@@ -66,7 +76,7 @@ form{
         <form name="YourRecipe" onsubmit="return validateForm()" method="post">
             <h3 style="font-size:300%; text-align: center;">Share your recipe </h3>
             <label for="emri">Full Name</label>
-            <input type="text" name="emri" id="emri">
+            <input type="text" name="emri" id="name" autocomplete="off">
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
@@ -79,10 +89,35 @@ form{
             <input type="text" name="recipee" id="recipe">
             <label for="myfile">Add a photo or a video</label>
             <input type="file" id="myfile" name="myfile"><br><br>
-            <input type="submit" value="Share here" action="/action_page.php" id="share">
-        </form>
-    
 
+            <button type="submit" action="/action_page.php" id="share">
+            
+          </form>
+          
+          <p id="nriformave"></p>
+        <script>
+
+          var a=0;
+          function add(){
+            var b=a;
+          }
+        
+          
+          var k = $('h1').text();
+          // alert(k);
+        
+
+          //$("p").css("background-color","red")
+
+        
+          if($(":submit").length>0){
+          
+            $(":submit").addClass('.klasa');
+          
+        }else if($(":search").length>0){
+          $(":search").addClass('.klasa');
+        };
+        </script>
         
     </main>
     
@@ -219,6 +254,9 @@ form{
       </script>
       
       <script>
+
+        var x = document.getElementsByTagName("form").length;
+        document.getElementById("nriformave").innerHTML =x;
       // Get the modal
       var modal = document.getElementById('signup-id01');
       
@@ -228,18 +266,18 @@ form{
           modal.style.display = "none";
         }
       }
-      window.onscroll = function() {myFunction()};
+    //   window.onscroll = function() {myFunction()};
 
-    var header = document.getElementById("bmyTopnav");
-    var sticky = header.offsetTop;
+    // var header = document.getElementById("bmyTopnav");
+    // var sticky = header.offsetTop;
 
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
+    // function myFunction() {
+    //   if (window.pageYOffset > sticky) {
+    //     header.classList.add("sticky");
+    //   } else {
+    //     header.classList.remove("sticky");
+    //   }
+    // }
       </script>
   </div>
 </div>

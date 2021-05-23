@@ -32,7 +32,7 @@
        animation-direction:alternate-reverse ;
        animation-duration:30s ;
        animation-fill-mode: forwards;
-       animation-timing-function:infinite ;
+       animation-iteration-count:infinite ;
        animation-play-state:running ;
        animation-timing-function: ease-in-out;
     }
@@ -97,7 +97,7 @@
 
 .btopnav .bicon {
   display: none;
-}
+} 
 
 .bdropdown {
   float: left;
@@ -606,3 +606,6 @@ th, td {
   text-align: center;
   border-bottom: none;
 }
+
+
+
